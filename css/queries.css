@@ -1,0 +1,17 @@
+.container {
+    padding:0px;
+}
+
+@media screen and (max-width:760px) {
+    aside.w-contacts {
+        display: none;
+    }
+}
+
+@media(min-width:1300px) {
+    .container {
+        width: 1321px;
+        padding:0px;
+    }
+}
+
