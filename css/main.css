@@ -36,7 +36,7 @@
 
 #ul {
   background-color: #fff;
-  border-bottom: 2px solid #680808;
+  border-bottom: 2px solid #7C2B3E;
   width: 100%;
   /* hacemos que la cabecera ocupe el ancho completo de la página */
   left: 5px;
@@ -50,7 +50,7 @@
 .nav a {
   font-size: 25px;
   font-family: "Lobster Two", cursive;
-  color: #680808;
+  color: #7C2B3E;
   padding: 2%;
 }
 
@@ -70,7 +70,7 @@
 
 .presentacion h1 {
   font-family: "Lobster Two", cursive;
-  color: #680808;
+  color: #7C2B3E;
   margin-top: 170px;
   font-size: 70px;
   animation-duration: 3s;
@@ -79,7 +79,7 @@
 
 .presentacion h2 {
   font-family: "Pontano Sans", sans-serif;
-  color: #680808;
+  color: #7C2B3E;
   font-size: 20px;
   animation-duration: 3s;
   animation-name: slidein;
@@ -97,14 +97,14 @@
 }
 
 .fondo-content {
-  border: 2px solid #680808;
+  border: 2px solid #7C2B3E;
   margin-top: 70px;
   margin-bottom: 70px;
   background-color: #fff;
 }
 
 .yo p {
-  color: #680808;
+  color: #7C2B3E;
   font-family: "Pontano Sans", sans-serif;
   font-size: 20px;
   margin-top: 40px;
@@ -160,17 +160,15 @@
 
 .proyect {
   margin-top: 70px;
-  border: 2px solid #680808;
+  border: 2px solid #7C2B3E;
   padding: 2%;
-  background-color: #680808;
-  opacity: 0.9;
+  background-color: #7C2B3E;
 }
 
 .proyect img {
   width: 500px;
   margin-left: 20px;
   margin-bottom: 30px;
-  border: 2px solid #FBD38B;
   padding: 15px;
 }
 
@@ -178,8 +176,25 @@
   width: 500px;
   margin-left: 20px;
   margin-bottom: 30px;
-  border: 2px solid #FBD38B;
+  border: 2px dashed #FBD38B;
   padding: 15px;
+}
+
+.gif img {
+  margin-top: 10%;
+  margin-left: 25%;
+}
+
+.gif h2 {
+  margin-top: 25%;
+  font-family: "Lobster Two", cursive;
+  color: #7C2B3E;
+  font-size: 50px;
+}
+
+.fondo-footer {
+  background-color: #fff;
+  border-top: 2px solid #7C2B3E;
 }
 
 .foot {
@@ -188,15 +203,24 @@
 }
 
 .foot img {
-  width: 90px;
+  width: 50px;
   margin-left: 30%;
+}
+
+.foot img:hover {
+  width: 50px;
+  margin-left: 30%;
+  border: 2px dashed #7C2B3E;
+  border-radius: 100%;
+  padding: 2%;
 }
 
 .footp p {
   font-size: 20px;
   font-family: "Lobster Two", cursive;
-  color: #680808;
-  margin-left: 33%;
+  color: #7C2B3E;
+  margin-left: 27%;
+  margin-top: -6%;
 }
 
 @media (max-width: 750px) {
@@ -234,5 +258,11 @@
   .presentacion h2 {
     margin-top: 2%;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .img-interest img {
+    width: 25px;
   }
 }

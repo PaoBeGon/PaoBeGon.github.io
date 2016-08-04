@@ -1,6 +1,6 @@
 $fuente:'Lobster Two', cursive;
 $fuentep:'Pontano Sans', sans-serif;
-$color_guinda:#680808;
+$color_guinda:#7C2B3E;
 $color_crema:#FBD38B;
 $color_fram:#FC0037;
 $color_plomo:#F1F1F1;
@@ -176,21 +176,34 @@ $color_cremac:#FFF0C9;
 	border:2px solid $color_guinda;
 	padding:2%;
 	background-color:$color_guinda;
-	opacity:0.9;
 }
 .proyect img{
 	width:500px;
 	margin-left:20px;
 	margin-bottom:30px;
-	border: 2px solid $color_crema;
 	padding:15px;
 }
 .proyect img:hover{
 	width:500px;
 	margin-left:20px;
 	margin-bottom:30px;
-	border: 2px solid $color_crema;
+	border: 2px dashed $color_crema;
 	padding:15px;
+}
+// footer
+.gif img{
+	margin-top:10%;
+	margin-left:25%;
+}
+.gif h2{
+	margin-top:25%;
+	font-family:$fuente;
+	color:$color_guinda;
+	font-size:50px;
+}
+.fondo-footer{
+	background-color:#fff;
+	border-top:2px solid $color_guinda;
 }
 .foot{
 	margin-top:5%;
@@ -198,14 +211,22 @@ $color_cremac:#FFF0C9;
 
 }
 .foot img{
-	width: 90px;
+	width: 50px;
 	margin-left: 30%;
+}
+.foot img:hover{
+	width: 50px;
+	margin-left: 30%;
+	border:2px dashed $color_guinda;
+	border-radius:100%;
+	padding:2%;
 }
 .footp p{
 	font-size: 20px;
 	font-family: $fuente;
 	color: $color_guinda;
-	margin-left: 33%;
+	margin-left: 27%;
+	margin-top:-6%;
 }
 @media (max-width:750px){
 .nav img{
@@ -238,6 +259,11 @@ $color_cremac:#FFF0C9;
 .presentacion h2{
 	margin-top:2%;
 	font-size:20px;
+}
+}
+@media (max-width:750px){
+.img-interest img{
+	width:25px;
 }
 }
 
