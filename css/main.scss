@@ -171,15 +171,31 @@ $color_cremac:#FFF0C9;
 	margin-right:5%;
 }
 // content3
-.proyect{	
+.proyect{
+	position:relative;
+	width:504;	
 	margin-top:70px;
 	border:2px solid $color_guinda;
 	padding:2%;
 	background-color:$color_guinda;
 }
+.proyect1{
+	position:relative;
+}
+.proyect1:hover .info, .proyect:hover .mouse{
+	filter:alpha(opacity=0);
+	opacity:1;
+}
+.proyect1:hover.mouse{
+	left:100px;
+}
 .proyect img{
+	position:relative;
+	z-index: 2;
+	box-shadow:1px 1px 4px #333;
 	width:400px;
 	margin-left:15%;
+	margin-bottom:2%;
 	padding:15px;
 }
 .proyect img:hover{
@@ -188,6 +204,64 @@ $color_cremac:#FFF0C9;
 	margin-bottom:30px;
 	border: 2px dashed $color_crema;
 	padding:15px;
+}
+.info{
+	position:absolute;
+	z-index: 3;
+	top:30%;
+	zoom:1;
+	filter:alpha (opacity=0);
+	opacity:0;
+	padding:5px;
+	text-aling:center;
+	background:#333;
+	background:rgba(0, 0, 0, 0.7);
+}
+.proyect2{
+	position:relative;
+}
+.proyect2:hover .info, .proyect:hover .mouse{
+	filter:alpha(opacity=0);
+	opacity:1;
+}
+.proyect2:hover.mouse{
+	left:100px;
+}
+.info{
+	position:absolute;
+	z-index: 3;
+	top:30%;
+	zoom:1;
+	filter:alpha (opacity=0);
+	opacity:0;
+	padding:5px;
+	text-aling:center;
+	background:#333;
+	background:rgba(0, 0, 0, 0.7);
+	margin-top:-20%;
+}
+.proyect3{
+	position:relative;
+}
+.proyect3:hover .info, .proyect:hover .mouse{
+	filter:alpha(opacity=0);
+	opacity:1;
+}
+.proyect3:hover.mouse{
+	left:100px;
+}
+.info{
+	position:absolute;
+	z-index: 3;
+	top:30%;
+	zoom:1;
+	filter:alpha (opacity=0);
+	opacity:0;
+	padding:5px;
+	text-aling:center;
+	background:#333;
+	background:rgba(0, 0, 0, 0.7);
+	margin-top:-20%;
 }
 // footer
 .gif img{
@@ -211,11 +285,11 @@ $color_cremac:#FFF0C9;
 }
 .foot img{
 	width: 50px;
-	margin-left: 30%;
+	margin-left: 39%;
 }
 .foot img:hover{
 	width: 50px;
-	margin-left: 30%;
+	margin-left: 39%;
 	border:2px dashed $color_guinda;
 	border-radius:100%;
 	padding:2%;
@@ -224,8 +298,13 @@ $color_cremac:#FFF0C9;
 	font-size: 20px;
 	font-family: $fuente;
 	color: $color_guinda;
-	margin-left: 27%;
-	margin-top:-6%;
+	margin-top:2%;
+}
+.foot a{
+		text-decoration:none;
+}
+.foot a:hover{
+		text-decoration:none;
 }
 @media (max-width:750px){
 .nav img{
@@ -263,12 +342,12 @@ $color_cremac:#FFF0C9;
 @media (max-width:750px){
 .img-interest img{
 	width:90px;
-	margin-left:5%;
+	margin-left:10%;
 }
 }
 @media (max-width:750px){
 .habilidades img{
-	margin-left:5%;
+	margin-left:10%;
 }
 }
 @media (max-width:750px){
@@ -280,7 +359,7 @@ $color_cremac:#FFF0C9;
 }
 @media (max-width:750px){
 .gif img{
-	width:95px;
+	width:150px;
 	margin-left:2%;
 }
 }
