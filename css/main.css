@@ -166,15 +166,14 @@
 }
 
 .proyect img {
-  width: 500px;
-  margin-left: 20px;
-  margin-bottom: 30px;
+  width: 400px;
+  margin-left: 15%;
   padding: 15px;
 }
 
 .proyect img:hover {
-  width: 500px;
-  margin-left: 20px;
+  width: 400px;
+  margin-left: 15%;
   margin-bottom: 30px;
   border: 2px dashed #FBD38B;
   padding: 15px;
@@ -215,7 +214,7 @@
   padding: 2%;
 }
 
-.footp p {
+.foot p {
   font-size: 20px;
   font-family: "Lobster Two", cursive;
   color: #7C2B3E;
@@ -263,6 +262,33 @@
 
 @media (max-width: 750px) {
   .img-interest img {
-    width: 25px;
+    width: 90px;
+  }
+}
+
+@media (max-width: 750px) {
+  .proyect img {
+    width: 200px;
+    margin-left: -5%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .gif img {
+    width: 95px;
+  }
+}
+
+@media (max-width: 750px) {
+  .gif h2 {
+    font-size: 25px;
+    margin-top: -1%;
+  }
+}
+
+@media (max-width: 750px) {
+  .foot p {
+    margin-top: 2%;
   }
 }
