@@ -263,11 +263,17 @@ $color_cremac:#FFF0C9;
 @media (max-width:750px){
 .img-interest img{
 	width:90px;
+	margin-left:5%;
+}
+}
+@media (max-width:750px){
+.habilidades img{
+	margin-left:5%;
 }
 }
 @media (max-width:750px){
 .proyect img{
-	width:200px;
+	width:250px;
 	margin-left:-5%;
 	padding:15px;
 }
@@ -275,12 +281,14 @@ $color_cremac:#FFF0C9;
 @media (max-width:750px){
 .gif img{
 	width:95px;
+	margin-left:2%;
 }
 }
 @media (max-width:750px){
 .gif h2{
 	font-size:25px;
 	margin-top:-1%;
+	margin-left:2%;
 }
 }
 @media (max-width:750px){
