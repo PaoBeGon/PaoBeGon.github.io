@@ -40,6 +40,7 @@ $color_cremac:#FFF0C9;
   transform : scale(1.1)
 }
 #ul{
+	z-index: 1;
 	background-color:#fff;
 	border-bottom:2px solid $color_guinda;
 	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
@@ -178,6 +179,7 @@ $color_cremac:#FFF0C9;
 	border:2px solid $color_guinda;
 	padding:2%;
 	background-color:$color_guinda;
+	z-index: 0;
 }
 .proyect1{
 	position:relative;
@@ -375,4 +377,3 @@ $color_cremac:#FFF0C9;
 	margin-top:2%;
 }
 }
-

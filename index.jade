@@ -22,6 +22,10 @@ html(lang='en')
     //if lt IE 9
       script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    link(type='text/css', rel='stylesheet', href='animate.css')
+    script(type='text/javascript', src='jquery.min.js')
+    script(type='text/javascript', src='jquery.aniview.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js')
   body.fondog
     #inicio
     header
@@ -45,7 +49,7 @@ html(lang='en')
                             a(href="#contacto") Contacto
                 .row.presentacion
                     .col-md-6
-                        img.img-responsive(src="img/pao.jpg")
+                        img.img-responsive.aniview.slow(av-animation='fadeIn')(src="img/pao.jpg")
                     .col-md-6
                         h1.text-center Paola<br>Begazo Gonzales
                         h2.text-center Front-End Developer
@@ -145,8 +149,22 @@ html(lang='en')
                     .col-md-3
                         img.img-responsive(src="img/gmail2.svg")
                         p.text-center paobegon1@gmail.com
-                        
-
+    script.
+      $(document).ready(function(){
+            $('.aniview').AniView();
+        });
+      var options = {
+      animateThreshold: 100,
+      scrollPollInterval: 20
+      }
+      $('.aniview').AniView(options);
+            //obtenemos la posición en la que se encuentra el botón
+      var posicion_boton = $("#boton").offset().top;
+      //hacemos scroll hasta el botón
+      $("html, body").animate({scrollTop:posicion_boton+"px"});
+            $("#arriba").click(function(){
+      $("html, body").animate({scrollTop:"0px"});
+      });
 
 
 
