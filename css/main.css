@@ -37,7 +37,7 @@
 #ul {
   z-index: 1;
   background-color: #fff;
-  border-bottom: 2px solid #7C2B3E;
+  border-bottom: 2px solid #B23256;
   width: 100%;
   /* hacemos que la cabecera ocupe el ancho completo de la página */
   left: 5px;
@@ -51,14 +51,14 @@
 .nav a {
   font-size: 25px;
   font-family: "Lobster Two", cursive;
-  color: #7C2B3E;
+  color: #B23256;
   padding: 2%;
 }
 
 .nav a:hover {
   font-size: 25px;
   font-family: "Lobster Two", cursive;
-  color: #FBD38B;
+  color: #FCD47D;
   text-decoration: none;
 }
 
@@ -71,7 +71,7 @@
 
 .presentacion h1 {
   font-family: "Lobster Two", cursive;
-  color: #7C2B3E;
+  color: #B23256;
   margin-top: 170px;
   font-size: 70px;
   animation-duration: 3s;
@@ -80,7 +80,7 @@
 
 .presentacion h2 {
   font-family: "Pontano Sans", sans-serif;
-  color: #7C2B3E;
+  color: #B23256;
   font-size: 20px;
   animation-duration: 3s;
   animation-name: slidein;
@@ -98,14 +98,14 @@
 }
 
 .fondo-content {
-  border: 2px solid #7C2B3E;
+  border: 2px solid #B23256;
   margin-top: 70px;
   margin-bottom: 70px;
   background-color: #fff;
 }
 
 .yo p {
-  color: #7C2B3E;
+  color: #B23256;
   font-family: "Pontano Sans", sans-serif;
   font-size: 20px;
   margin-top: 40px;
@@ -163,9 +163,9 @@
   position: relative;
   width: 504;
   margin-top: 70px;
-  border: 2px solid #7C2B3E;
+  border: 2px solid #B23256;
   padding: 2%;
-  background-color: #7C2B3E;
+  background-color: #B23256;
   z-index: 0;
 }
 
@@ -196,7 +196,7 @@
   width: 400px;
   margin-left: 15%;
   margin-bottom: 30px;
-  border: 2px dashed #FBD38B;
+  border: 2px dashed #FCD47D;
   padding: 15px;
 }
 
@@ -276,13 +276,13 @@
 .gif h2 {
   margin-top: 25%;
   font-family: "Lobster Two", cursive;
-  color: #7C2B3E;
+  color: #B23256;
   font-size: 50px;
 }
 
 .fondo-footer {
   background-color: #fff;
-  border-top: 2px solid #7C2B3E;
+  border-top: 2px solid #B23256;
 }
 
 .foot {
@@ -298,7 +298,7 @@
 .foot img:hover {
   width: 50px;
   margin-left: 39%;
-  border: 2px dashed #7C2B3E;
+  border: 2px dashed #B23256;
   border-radius: 100%;
   padding: 2%;
 }
@@ -306,7 +306,7 @@
 .foot p {
   font-size: 20px;
   font-family: "Lobster Two", cursive;
-  color: #7C2B3E;
+  color: #B23256;
   margin-top: 2%;
 }
 
