@@ -269,6 +269,7 @@ $color_cremac:#FFF0C9;
 .gif img{
 	margin-top:10%;
 	margin-left:25%;
+	border-radius:100%;
 }
 .gif h2{
 	margin-top:25%;
@@ -376,4 +377,15 @@ $color_cremac:#FFF0C9;
 .foot p{
 	margin-top:2%;
 }
+}
+// prueba
+#Divy{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 50px;
+    width: 50px;
+
+    background: red;
 }
