@@ -251,6 +251,7 @@ span{
 // footer
 .gif img{
 	margin-left:25%;
+	border-radius:100%;
 }
 .gif h2{
 	font-family:$fuente;
@@ -353,4 +354,15 @@ span{
 .foot p{
 	margin-top:2%;
 }
+}
+// prueba
+#Divy{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 50px;
+    width: 50px;
+
+    background: red;
 }
