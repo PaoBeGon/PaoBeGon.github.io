@@ -1,4 +1,8 @@
 @charset "UTF-8";
+span {
+  margin-left: -2px;
+}
+
 .fondog {
   background-color: #FFF0C9;
 }
@@ -65,15 +69,15 @@
 
 .presentacion img {
   width: 390px;
-  padding-top: 37px;
-  padding-bottom: 37px;
+  padding-top: 18%;
+  padding-bottom: 15%;
   margin-left: 160px;
 }
 
 .presentacion h1 {
   font-family: "Lobster Two", cursive;
   color: #B23256;
-  margin-top: 170px;
+  margin-top: 190px;
   font-size: 70px;
   animation-duration: 3s;
   animation-name: slidein;
@@ -187,13 +191,14 @@
 .proyect img {
   position: relative;
   z-index: 2;
-  box-shadow: 1px 1px 4px #333;
+  box-shadow: 1px 1px 4px #FCD47D;
   width: 400px;
   margin-left: 15%;
   margin-bottom: 2%;
   padding: 15px;
 }
 
+<<<<<<< HEAD
 .proyect img:hover {
   width: 400px;
   margin-left: 15%;
@@ -202,6 +207,8 @@
   padding: 15px;
 }
 
+=======
+>>>>>>> 4e885a23488b2cbf24e3dd86f501900c584c92d4
 .info {
   position: absolute;
   z-index: 3;
@@ -228,20 +235,6 @@
   left: 100px;
 }
 
-.info {
-  position: absolute;
-  z-index: 3;
-  top: 30%;
-  zoom: 1;
-  filter: alpha opacity=0;
-  opacity: 0;
-  padding: 5px;
-  text-aling: center;
-  background: #333;
-  background: rgba(0, 0, 0, 0.7);
-  margin-top: -20%;
-}
-
 .proyect3 {
   position: relative;
 }
@@ -255,18 +248,43 @@
   left: 100px;
 }
 
-.info {
-  position: absolute;
-  z-index: 3;
-  top: 30%;
-  zoom: 1;
-  filter: alpha opacity=0;
-  opacity: 0;
-  padding: 5px;
-  text-aling: center;
-  background: #333;
-  background: rgba(0, 0, 0, 0.7);
-  margin-top: -20%;
+.proyect4 {
+  position: relative;
+}
+
+.proyect4:hover .info, .proyect:hover .mouse {
+  filter: alpha(opacity=0);
+  opacity: 1;
+}
+
+.proyect4:hover.mouse {
+  left: 100px;
+}
+
+.proyect5 {
+  position: relative;
+}
+
+.proyect5:hover .info, .proyect:hover .mouse {
+  filter: alpha(opacity=0);
+  opacity: 1;
+}
+
+.proyect5:hover.mouse {
+  left: 100px;
+}
+
+.proyect6 {
+  position: relative;
+}
+
+.proyect6:hover .info, .proyect:hover .mouse {
+  filter: alpha(opacity=0);
+  opacity: 1;
+}
+
+.proyect6:hover.mouse {
+  left: 100px;
 }
 
 .gif img {
@@ -278,7 +296,11 @@
   font-family: "Lobster Two", cursive;
   color: #B23256;
   font-size: 50px;
+<<<<<<< HEAD
   margin-top: 8%;
+=======
+  margin-top: 10%;
+>>>>>>> 4e885a23488b2cbf24e3dd86f501900c584c92d4
 }
 
 .fondo-footer {
@@ -314,6 +336,7 @@
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 #correo {
   width: 170px;
   border: none;
@@ -321,6 +344,9 @@
 }
 
 @media (max-width: 750px) {
+=======
+@media (max-width: 320px) {
+>>>>>>> 4e885a23488b2cbf24e3dd86f501900c584c92d4
   .nav img {
     margin-left: 12%;
     float: left;
@@ -330,13 +356,13 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .nav a {
     font-size: 10px;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .presentacion img {
     margin-left: 12%;
     margin-top: 45%;
@@ -344,34 +370,34 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .presentacion h1 {
     margin-top: -5%;
     font-size: 20px;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .presentacion h2 {
     margin-top: 2%;
     font-size: 20px;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .img-interest img {
     width: 90px;
     margin-left: 10%;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .habilidades img {
     margin-left: 10%;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .proyect img {
     width: 250px;
     margin-left: -5%;
@@ -379,14 +405,14 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .gif img {
     width: 150px;
     margin-left: 2%;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .gif h2 {
     font-size: 25px;
     margin-top: -1%;
@@ -394,7 +420,7 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .foot p {
     margin-top: 2%;
   }

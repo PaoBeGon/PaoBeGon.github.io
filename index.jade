@@ -5,6 +5,7 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title Paola Begazo:.
+    link(rel="Shortcut icon" href="favicon.ico" type="image/x-icon")
     link(rel="stylesheet", href="css/main.css")
     // Bootstrap Core CSS
     link(rel='stylesheet', href='css/bootstrap.min.css', type='text/css')
@@ -22,9 +23,6 @@ html(lang='en')
     //if lt IE 9
       script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
-    link(type='text/css', rel='stylesheet', href='animate.css')
-    script(type='text/javascript', src='jquery.min.js')
-    script(type='text/javascript', src='jquery.aniview.min.js')
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js')
   body.fondog
     #inicio
@@ -36,23 +34,28 @@ html(lang='en')
                     .row.nav
                         img.img-responsive(src="img/corazon.png")
 
-                    ul.list-inline.list-unstyled#ul
+                    ul.list-inline.list-unstyled.cl-effect-20#ul
                         li
                             a(href="#inicio") Inicio
+                                span(data-hover='Inicio')
                         li
                             a(href="#yo") Yo
+                                span(data-hover='Yo')
                         li
                             a(href="#habilidades") Habilidades
+                                span(data-hover='Habilidades')
                         li
                             a(href="#proyectos") Proyectos
+                                span(data-hover='Proyectos')
                         li
                             a(href="#contacto") Contacto
+                                span(data-hover='Contacto')
                 .row.presentacion
                     .col-md-6
                         img.img-responsive.aniview.slow(av-animation='fadeIn')(src="img/pao.jpg")
                     .col-md-6
                         h1.text-center Paola<br>Begazo Gonzales
-                        h2.text-center Front-End Developer
+                        h2.text-center Frontend Developer
     #yo
     content
         .container-fluid
