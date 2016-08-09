@@ -40,6 +40,7 @@ $color_cremac:#FFF0C9;
   transform : scale(1.1)
 }
 #ul{
+	padding:1%;
 	z-index: 1;
 	background-color:#fff;
 	border-bottom:2px solid $color_guinda;
@@ -52,7 +53,7 @@ $color_cremac:#FFF0C9;
 	font-size:25px;
 	font-family:$fuente;
 	color:$color_guinda;
-	padding:2%;
+	padding:5%;
 }
 .nav a:hover{
 	font-size:25px;
@@ -112,36 +113,16 @@ $color_cremac:#FFF0C9;
 .img-interest img{
 	width:150px;
 	// float:center;
-	border:2px dashed $color_fram;
+	border:2px solid $color_guinda;
 	border-radius:100%;
 	margin-left:20%;
 	margin-bottom:20%;
-	// margin: 20px;
- //    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
- //    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
- //    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
- //    -webkit-transition: all 3s ease-out;
- //    -moz-transition: all 3s ease;
- //    -o-transition: all 3s ease;
- //    animation : scales 3s ease infinite
 }
 .img-interest img:hover{
-	// width:150px;
-	// float:center;
-	// border:2px dashed $color_fram;
-	// border-radius:100%;
-	// margin-left:20%;
-	// margin-bottom:20%;
 	-webkit-transform: rotate(-7deg);
     -moz-transform: rotate(-7deg);
     -o-transform: rotate(-7deg);
 }
-// @keyframes scales{
-//   from{
-//    transform : scale(0.9)
-//   }
-//   transform : scale(1.1)
-// }
 // content2
 #efepara{
 
@@ -176,6 +157,7 @@ $color_cremac:#FFF0C9;
 	position:relative;
 	width:504;	
 	margin-top:70px;
+	margin-bottom:5%;
 	border:2px solid $color_guinda;
 	padding:2%;
 	background-color:$color_guinda;
@@ -204,7 +186,7 @@ $color_cremac:#FFF0C9;
 	width:400px;
 	margin-left:15%;
 	margin-bottom:30px;
-	border: 2px dashed $color_crema;
+	border: 2px dashed #fff;
 	padding:15px;
 }
 .info{
@@ -267,25 +249,24 @@ $color_cremac:#FFF0C9;
 }
 // footer
 .gif img{
-	margin-top:10%;
 	margin-left:25%;
 	border-radius:100%;
 }
 .gif h2{
-	margin-top:25%;
 	font-family:$fuente;
 	color:$color_guinda;
 	font-size:50px;
+	margin-top:8%;
 }
 .fondo-footer{
-	background-color:#fff;
-	border-top:2px solid $color_guinda;
+	background:url("../img/fondo1.png");
+	padding:2%;
 }
-.foot{
-	margin-top:5%;
-	margin-bottom:5%;
+// .foot{
+// 	margin-top:5%;
+// 	margin-bottom:5%;
 
-}
+// }
 .foot img{
 	width: 50px;
 	margin-left: 39%;
@@ -308,6 +289,14 @@ $color_cremac:#FFF0C9;
 }
 .foot a:hover{
 		text-decoration:none;
+}
+// #mail{
+// 	margin-left:20%;
+// }
+#correo{
+	width:170px;
+	border:none;
+	margin-top:5px;
 }
 @media (max-width:750px){
 .nav img{

@@ -35,6 +35,7 @@
 }
 
 #ul {
+  padding: 1%;
   z-index: 1;
   background-color: #fff;
   border-bottom: 2px solid #B23256;
@@ -52,7 +53,7 @@
   font-size: 25px;
   font-family: "Lobster Two", cursive;
   color: #B23256;
-  padding: 2%;
+  padding: 5%;
 }
 
 .nav a:hover {
@@ -114,7 +115,7 @@
 
 .img-interest img {
   width: 150px;
-  border: 2px dashed #FC0037;
+  border: 2px solid #B23256;
   border-radius: 100%;
   margin-left: 20%;
   margin-bottom: 20%;
@@ -163,6 +164,7 @@
   position: relative;
   width: 504;
   margin-top: 70px;
+  margin-bottom: 5%;
   border: 2px solid #B23256;
   padding: 2%;
   background-color: #B23256;
@@ -196,7 +198,7 @@
   width: 400px;
   margin-left: 15%;
   margin-bottom: 30px;
-  border: 2px dashed #FCD47D;
+  border: 2px dashed #fff;
   padding: 15px;
 }
 
@@ -268,26 +270,20 @@
 }
 
 .gif img {
-  margin-top: 10%;
   margin-left: 25%;
   border-radius: 100%;
 }
 
 .gif h2 {
-  margin-top: 25%;
   font-family: "Lobster Two", cursive;
   color: #B23256;
   font-size: 50px;
+  margin-top: 8%;
 }
 
 .fondo-footer {
-  background-color: #fff;
-  border-top: 2px solid #B23256;
-}
-
-.foot {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  background: url("../img/fondo1.png");
+  padding: 2%;
 }
 
 .foot img {
@@ -316,6 +312,12 @@
 
 .foot a:hover {
   text-decoration: none;
+}
+
+#correo {
+  width: 170px;
+  border: none;
+  margin-top: 5px;
 }
 
 @media (max-width: 750px) {
