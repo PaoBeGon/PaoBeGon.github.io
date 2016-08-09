@@ -321,7 +321,7 @@ span {
   text-decoration: none;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .nav img {
     margin-left: 12%;
     float: left;
@@ -331,13 +331,13 @@ span {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .nav a {
     font-size: 10px;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .presentacion img {
     margin-left: 12%;
     margin-top: 45%;
@@ -345,34 +345,34 @@ span {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .presentacion h1 {
     margin-top: -5%;
     font-size: 20px;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .presentacion h2 {
     margin-top: 2%;
     font-size: 20px;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .img-interest img {
     width: 90px;
     margin-left: 10%;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .habilidades img {
     margin-left: 10%;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .proyect img {
     width: 250px;
     margin-left: -5%;
@@ -380,14 +380,14 @@ span {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .gif img {
     width: 150px;
     margin-left: 2%;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .gif h2 {
     font-size: 25px;
     margin-top: -1%;
@@ -395,7 +395,7 @@ span {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
   .foot p {
     margin-top: 2%;
   }
