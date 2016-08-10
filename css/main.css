@@ -39,10 +39,10 @@ span {
 }
 
 #ul {
-  padding: 1%;
+  padding: 1% 30%;
   z-index: 1;
   background-color: #fff;
-  border-bottom: 2px solid #B23256;
+  border: 2px solid #B23256;
   width: 100%;
   /* hacemos que la cabecera ocupe el ancho completo de la página */
   left: 5px;
@@ -58,9 +58,10 @@ span {
   font-family: "Lobster Two", cursive;
   color: #B23256;
   padding: 5%;
+  transition: all 0.5s;
 }
 
-.nav a:hover {
+.nav a:hover, .nav a.active {
   font-size: 25px;
   font-family: "Lobster Two", cursive;
   color: #FCD47D;

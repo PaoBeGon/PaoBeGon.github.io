@@ -43,10 +43,10 @@ span{
   transform : scale(1.1)
 }
 #ul{
-	padding:1%;
+	padding: 1% 30%;
 	z-index: 1;
 	background-color:#fff;
-	border-bottom:2px solid $color_guinda;
+	border:2px solid $color_guinda;
 	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
 	left: 5px; /* Posicionamos la cabecera al lado izquierdo */
 	top: 0; /* Posicionamos la cabecera pegada arriba */
@@ -57,8 +57,9 @@ span{
 	font-family:$fuente;
 	color:$color_guinda;
 	padding:5%;
+	transition: all 0.5s;
 }
-.nav a:hover{
+.nav a:hover, .nav a.active{
 	font-size:25px;
 	font-family:$fuente;
 	color:$color_crema;
