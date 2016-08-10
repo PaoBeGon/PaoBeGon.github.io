@@ -35,26 +35,34 @@ html(lang='en')
         .container-fluid.fondo-header
             .container
                 .row.nav
-                    img.img-responsive(src="img/corazon.png")
-                    .row.nav
-                        img.img-responsive(src="img/corazon.png")
 
-                    ul.list-inline.list-unstyled.cl-effect-20#ul
-                        li
-                            a(href="#inicio") Inicio
-                                span(data-hover='Inicio')
-                        li
-                            a(href="#yo") Yo
-                                span(data-hover='Yo')
-                        li
-                            a(href="#habilidades") Habilidades
-                                span(data-hover='Habilidades')
-                        li
-                            a(href="#proyectos") Proyectos
-                                span(data-hover='Proyectos')
-                        li
-                            a(href="#contacto") Contacto
-                                span(data-hover='Contacto')
+                        ul.ca-menu
+                          li
+                            a(href='#inicio')
+                              span.ca-icon.fa.fa-home
+                              .ca-content
+                                h2.ca-main Inicio
+                          li
+                            a(href='#yo')
+                              span.ca-icon.fa.fa-female
+                              .ca-content
+                                h2.ca-main Yo
+                          li
+                            a(href='#habilidades')
+                              span.ca-icon.fa.fa-trophy
+                              .ca-content
+                                h2.ca-main Habilidades
+                          li
+                            a(href='#proyectos')
+                              span.ca-icon.fa.fa-code
+                              .ca-content
+                                h2.ca-main Proyectos
+                          li
+                            a(href='#contacto')
+                              span.ca-icon.fa.fa-globe
+                              .ca-content
+                                h2.ca-main Contacto
+
                 .row.presentacion
                     .col-md-6
                         img.img-responsive.aniview.slow(av-animation='fadeIn')(src="img/pao.jpg")
