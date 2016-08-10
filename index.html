@@ -135,22 +135,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      $(document).ready(function(){
-            $('.aniview').AniView();
-        });
-      var options = {
-      animateThreshold: 100,
-      scrollPollInterval: 20
-      }
-      $('.aniview').AniView(options);
-            //obtenemos la posición en la que se encuentra el botón
-      var posicion_boton = $("#boton").offset().top;
-      //hacemos scroll hasta el botón
-      $("html, body").animate({scrollTop:posicion_boton+"px"});
-            $("#arriba").click(function(){
-      $("html, body").animate({scrollTop:"0px"});
-      });
-    </script>
   </body>
 </html>

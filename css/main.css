@@ -198,17 +198,6 @@ span {
   padding: 15px;
 }
 
-<<<<<<< HEAD
-.proyect img:hover {
-  width: 400px;
-  margin-left: 15%;
-  margin-bottom: 30px;
-  border: 2px dashed #fff;
-  padding: 15px;
-}
-
-=======
->>>>>>> 4e885a23488b2cbf24e3dd86f501900c584c92d4
 .info {
   position: absolute;
   z-index: 3;
@@ -296,11 +285,12 @@ span {
   font-family: "Lobster Two", cursive;
   color: #B23256;
   font-size: 50px;
-<<<<<<< HEAD
   margin-top: 8%;
-=======
-  margin-top: 10%;
->>>>>>> 4e885a23488b2cbf24e3dd86f501900c584c92d4
+}
+
+.fondo-footer {
+  background: url("../img/fondo1.png");
+  padding: 2%;
 }
 
 .fondo-footer {
@@ -336,17 +326,13 @@ span {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 #correo {
   width: 170px;
   border: none;
   margin-top: 5px;
 }
 
-@media (max-width: 750px) {
-=======
 @media (max-width: 320px) {
->>>>>>> 4e885a23488b2cbf24e3dd86f501900c584c92d4
   .nav img {
     margin-left: 12%;
     float: left;

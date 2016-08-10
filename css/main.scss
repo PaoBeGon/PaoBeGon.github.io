@@ -43,11 +43,7 @@ span{
   transform : scale(1.1)
 }
 #ul{
-<<<<<<< HEAD
 	padding:1%;
-=======
-	padding: 1%;
->>>>>>> 4e885a23488b2cbf24e3dd86f501900c584c92d4
 	z-index: 1;
 	background-color:#fff;
 	border-bottom:2px solid $color_guinda;
@@ -60,12 +56,7 @@ span{
 	font-size:25px;
 	font-family:$fuente;
 	color:$color_guinda;
-<<<<<<< HEAD
 	padding:5%;
-=======
-	padding:2%;
-
->>>>>>> 4e885a23488b2cbf24e3dd86f501900c584c92d4
 }
 .nav a:hover{
 	font-size:25px;
@@ -169,11 +160,7 @@ span{
 	position:relative;
 	width:504;	
 	margin-top:70px;
-<<<<<<< HEAD
 	margin-bottom:5%;
-=======
-	margin-bottom: 5%;
->>>>>>> 4e885a23488b2cbf24e3dd86f501900c584c92d4
 	border:2px solid $color_guinda;
 	padding:2%;
 	background-color:$color_guinda;
@@ -198,16 +185,6 @@ span{
 	margin-bottom:2%;
 	padding:15px;
 }
-<<<<<<< HEAD
-.proyect img:hover{
-	width:400px;
-	margin-left:15%;
-	margin-bottom:30px;
-	border: 2px dashed #fff;
-	padding:15px;
-}
-=======
->>>>>>> 4e885a23488b2cbf24e3dd86f501900c584c92d4
 .info{
 	position:absolute;
 	z-index: 3;
@@ -279,7 +256,6 @@ span{
 	font-family:$fuente;
 	color:$color_guinda;
 	font-size:50px;
-<<<<<<< HEAD
 	margin-top:8%;
 }
 .fondo-footer{
@@ -291,14 +267,11 @@ span{
 // 	margin-bottom:5%;
 
 // }
-=======
-	margin-top: 10%;
-}
+	// margin-top: 10%;
 .fondo-footer{
 	background:url("../img/fondo1.png");
 	padding: 2%;
 }
->>>>>>> 4e885a23488b2cbf24e3dd86f501900c584c92d4
 .foot img{
 	width: 50px;
 	margin-left: 39%;
@@ -322,7 +295,6 @@ span{
 .foot a:hover{
 		text-decoration:none;
 }
-<<<<<<< HEAD
 // #mail{
 // 	margin-left:20%;
 // }
@@ -331,10 +303,7 @@ span{
 	border:none;
 	margin-top:5px;
 }
-@media (max-width:750px){
-=======
 @media (max-width:320px){
->>>>>>> 4e885a23488b2cbf24e3dd86f501900c584c92d4
 .nav img{
 	margin-left:12%;
 	float: left;
