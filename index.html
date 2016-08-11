@@ -14,24 +14,18 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-    <!-- Plugin CSS-->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-    <!-- Custom CSS-->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
-    <!--if lt IE 9
-    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
-    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
-    -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+    <noscript>
+      <link rel="stylesheet" type="text/css" href="css/styleNoJS.css">
+    </noscript>
   </head>
   <body class="fondog">
     <div id="inicio"></div>
-    <header>
+    <header class="fondo-header">
       <div class="container-fluid fondo-header">
         <div class="container">
           <div class="row nav">
@@ -62,7 +56,7 @@
             <div class="col-md-6"><img av-animation="fadeIn" src="img/pao.jpg" class="img-responsive aniview slow"></div>
             <div class="col-md-6">
               <h1 class="text-center">Paola<br>Begazo Gonzales</h1>
-              <h2 class="text-center">Frontend Developer</h2>
+              <h2 class="text-center">Frontend Developer</h2><img id="corazon" src="img/corazon.png">
             </div>
           </div>
         </div>
@@ -70,8 +64,8 @@
     </header>
     <div id="yo"></div>
     <content>
-      <div class="container-fluid">
-        <div class="container fondo-content">
+      <div class="container-fluid fondo-content">
+        <div class="container">
           <div class="row yo">
             <p class="text-center">Hola! soy Pao y descubrí el código gracias a Laboratoria, aunque siempre me llamó<br>la atencion el mundo de la tecnología y la programación entonces fue asi que se volvio una de mis pasiones.<br>Además de ser una coder, soy una apasionada de la comida y la cocteleria Peruana por eso también soy Chef.<br>Soy una persona positiva, me encantan los perritos y tengo muchas ganas de seguir creciendo como persona y como profesional.<br>¡VOY POR MÁS!</p>
           </div>
@@ -87,23 +81,53 @@
     <div id="habilidades"></div>
     <content2 id="efepara">
       <div class="container-fluid fondo-content2">
-        <div class="container">
+        <div class="container demo-2">
           <div class="row habilidades">
-            <div class="col-md-3">
-              <div class="thumbnail"><img src="img/html.png" class="img-responsive"></div>
-              <div class="thumbnail"><img src="img/css.png" class="img-responsive"></div>
-            </div>
-            <div class="col-md-3">
-              <div class="thumbnail"><img src="img/boo.png" class="img-responsive"></div>
-              <div class="thumbnail"><img src="img/sass.png" class="img-responsive"></div>
-            </div>
-            <div class="col-md-3">
-              <div class="thumbnail"><img src="img/wp.png" class="img-responsive"></div>
-              <div class="thumbnail"><img src="img/angular.png" class="img-responsive"></div>
-            </div>
-            <div class="col-md-3">
-              <div class="thumbnail"><img src="img/js.png" class="img-responsive"></div>
-              <div class="thumbnail"><img src="img/jade.png" class="img-responsive"></div>
+            <div id="slider" class="sl-slider-wrapper">
+              <div class="sl-slider">
+                <div data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2" class="sl-slide">
+                  <div class="sl-slide-inner">
+                    <div class="bg-img bg-img-1"></div>
+                    <h3>HTML, CSS</h3><img src="img/html.png" class="img-responsive"><img src="img/css.png" class="img-responsive">
+                    <blockquote>
+                      <p>Lenguajes utilizados en la presentación de la página web para darle forma y estilo.</p>
+                      <cite>Nivel: Avanzado</cite>
+                    </blockquote>
+                  </div>
+                </div>
+                <div data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5" class="sl-slide">
+                  <div class="sl-slide-inner">
+                    <div class="bg-img bg-img-2"></div>
+                    <h3>Bootstrap</h3><img src="img/boo.png" class="img-responsive">
+                    <blockquote>
+                      <p> Framework de css, para maquetar la página web en minutos, sin tocar una sola linea de CSS.</p>
+                      <cite>Nivel: Avanzado</cite>
+                    </blockquote>
+                  </div>
+                </div>
+                <div data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1" class="sl-slide">
+                  <div class="sl-slide-inner">
+                    <div class="bg-img bg-img-3"></div>
+                    <h3>Sass, Jade</h3><img src="img/sass.png" class="img-responsive"><img src="img/jade.png" class="img-responsive">
+                    <blockquote>
+                      <p>Son metalenguajes para simplificar el desarrollo del código y asi dar un resultado<br>en menos tiempo.</p>
+                      <cite>Nivel: Avanzado</cite>
+                    </blockquote>
+                  </div>
+                </div>
+                <div data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1" class="sl-slide">
+                  <div class="sl-slide-inner">
+                    <div class="bg-img bg-img-4"></div>
+                    <h3>Angular, JavaScript</h3><img src="img/angular.png" class="img-responsive"><img src="img/js.png" class="img-responsive">
+                    <blockquote>
+                      <p>AngularJS es un framework MVC de JavaScript para el Desarrollo Web Front End<br>que permite crear aplicaciones SPA (Single-Page Applications)y JavaScript es un<br> lenguaje de programación, que permite crear efectos atractivos y dinámicos en las páginas web.</p>
+                      <cite>Nivel: Intermedio</cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <!-- /sl-slider-->
+              <nav id="nav-dots" class="nav-dots"><span class="nav-dot-current"></span><span></span><span></span><span></span></nav>
             </div>
           </div>
         </div>
@@ -111,9 +135,9 @@
     </content2>
     <div id="proyectos"></div>
     <content3>
-      <div class="container-fluid fondo-content3">
+      <div class="container-fluid fondo-content3 proyect">
         <div class="container">
-          <div class="row proyect">
+          <div class="row">
             <div class="col-md-6">
               <div class="proyect1"><a href="#"><img src="img/akakau.png" class="img-responsive"><span class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></a></div>
               <div class="proyect2"><a href="#"><img src="img/danza.png" class="img-responsive"><span class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></a></div>
@@ -153,5 +177,49 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slitslider.js"></script>
+    <script type="text/javascript">
+      $(function() {
+      var Page = (function() {
+      var $nav = $( '#nav-dots > span' ),
+      slitslider = $( '#slider' ).slitslider( {
+      onBeforeChange : function( slide, pos ) {
+      $nav.removeClass( 'nav-dot-current' );
+      $nav.eq( pos ).addClass( 'nav-dot-current' );
+      }
+      } ),
+      init = function() {
+      initEvents();
+      },
+      initEvents = function() {
+      $nav.each( function( i ) {
+      $( this ).on( 'click', function( event ) {
+      var $dot = $( this );
+      if( !slitslider.isActive() ) {
+      $nav.removeClass( 'nav-dot-current' );
+      $dot.addClass( 'nav-dot-current' );
+      }
+      slitslider.jump( i + 1 );
+      return false;
+      } );
+      } );
+      };
+      return { init : init };
+      })();
+      Page.init();
+      /**
+      * Notes:
+      *
+      * example how to add items:
+      */
+      /*
+      var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+      // call the plugin's add method
+      ss.add($items);
+      */
+      });
+    </script>
   </body>
 </html>

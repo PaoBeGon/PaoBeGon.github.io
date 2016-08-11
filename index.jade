@@ -14,24 +14,16 @@ html(lang='en')
     link(href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css')
     link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css', type='text/css')
-    // Plugin CSS
-    link(rel='stylesheet', href='css/animate.min.css', type='text/css')
-    //- link(rel='stylesheet', href='animate.css', type='text/css')
-    // Custom CSS
-    link(rel='stylesheet', href='css/creative.css', type='text/css')
-    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
-    // WARNING: Respond.js doesn't work if you view the page via file://
-    //if lt IE 9
-      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
-      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js')
-
-    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js')
+    link(rel='shortcut icon', href='../favicon.ico')
+    link(rel='stylesheet', type='text/css', href='css/demo.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/css', href='css/custom.css')
+    script(type='text/javascript', src='js/modernizr.custom.79639.js')
+    noscript
+      link(rel='stylesheet', type='text/css', href='css/styleNoJS.css')
   body.fondog
     #inicio
-    header
+    header.fondo-header
         .container-fluid.fondo-header
             .container
                 .row.nav
@@ -69,10 +61,11 @@ html(lang='en')
                     .col-md-6
                         h1.text-center Paola<br>Begazo Gonzales
                         h2.text-center Frontend Developer
+                        img#corazon(src="img/corazon.png")
     #yo
     content
-        .container-fluid
-            .container.fondo-content
+        .container-fluid.fondo-content
+            .container
                 .row.yo
                     p.text-center Hola! soy Pao y descubrí el código gracias a Laboratoria, aunque siempre me llamó<br>la atencion el mundo de la tecnología y la programación entonces fue asi que se volvio una de mis pasiones.<br>Además de ser una coder, soy una apasionada de la comida y la cocteleria Peruana por eso también soy Chef.<br>Soy una persona positiva, me encantan los perritos y tengo muchas ganas de seguir creciendo como persona y como profesional.<br>¡VOY POR MÁS!
 
@@ -88,33 +81,56 @@ html(lang='en')
     #habilidades
     content2#efepara
         .container-fluid.fondo-content2
-            .container
+            .container.demo-2
                 .row.habilidades
-                    .col-md-3
-                        .thumbnail
-                            img.img-responsive(src="img/html.png")
-                        .thumbnail
-                            img.img-responsive(src="img/css.png")
-                    .col-md-3
-                        .thumbnail
-                            img.img-responsive(src="img/boo.png")
-                        .thumbnail
-                            img.img-responsive(src="img/sass.png")
-                    .col-md-3
-                        .thumbnail
-                            img.img-responsive(src="img/wp.png")
-                        .thumbnail
-                            img.img-responsive(src="img/angular.png")
-                    .col-md-3
-                        .thumbnail
-                            img.img-responsive(src="img/js.png")
-                        .thumbnail
-                            img.img-responsive(src="img/jade.png")
+                      #slider.sl-slider-wrapper
+                        .sl-slider
+                          .sl-slide(data-orientation='horizontal', data-slice1-rotation='-25', data-slice2-rotation='-25', data-slice1-scale='2', data-slice2-scale='2')
+                            .sl-slide-inner
+                              .bg-img.bg-img-1
+                              h3 HTML, CSS
+                              img.img-responsive(src="img/html.png")
+                              img.img-responsive(src="img/css.png")
+                              blockquote
+                                p Lenguajes utilizados en la presentación de la página web para darle forma y estilo.
+                                cite Nivel: Avanzado
+                          .sl-slide(data-orientation='vertical', data-slice1-rotation='10', data-slice2-rotation='-15', data-slice1-scale='1.5', data-slice2-scale='1.5')
+                            .sl-slide-inner
+                              .bg-img.bg-img-2
+                              h3 Bootstrap
+                              img.img-responsive(src="img/boo.png")
+                              blockquote
+                                p  Framework de css, para maquetar la página web en minutos, sin tocar una sola linea de CSS.
+                                cite Nivel: Avanzado
+                          .sl-slide(data-orientation='horizontal', data-slice1-rotation='3', data-slice2-rotation='3', data-slice1-scale='2', data-slice2-scale='1')
+                            .sl-slide-inner
+                              .bg-img.bg-img-3
+                              h3 Sass, Jade
+                              img.img-responsive(src="img/sass.png")
+                              img.img-responsive(src="img/jade.png")
+                              blockquote
+                                p Son metalenguajes para simplificar el desarrollo del código y asi dar un resultado<br>en menos tiempo.
+                                cite Nivel: Avanzado
+                          .sl-slide(data-orientation='vertical', data-slice1-rotation='-5', data-slice2-rotation='25', data-slice1-scale='2', data-slice2-scale='1')
+                            .sl-slide-inner
+                              .bg-img.bg-img-4
+                              h3 Angular, JavaScript
+                              img.img-responsive(src="img/angular.png")
+                              img.img-responsive(src="img/js.png")
+                              blockquote
+                                p AngularJS es un framework MVC de JavaScript para el Desarrollo Web Front End<br>que permite crear aplicaciones SPA (Single-Page Applications)y JavaScript es un<br> lenguaje de programación, que permite crear efectos atractivos y dinámicos en las páginas web.
+                                cite Nivel: Intermedio
+                        // /sl-slider
+                        nav#nav-dots.nav-dots
+                          span.nav-dot-current
+                          span
+                          span
+                          span
     #proyectos
     content3
-        .container-fluid.fondo-content3
+        .container-fluid.fondo-content3.proyect
             .container
-                .row.proyect
+                .row
                     .col-md-6
                         .proyect1
                             a(href="#")
@@ -166,6 +182,51 @@ html(lang='en')
                         img.img-responsive(src="img/gmail2.svg")
                         p.text-center
                             img.img-responsive#correo(src="img/paobegon.png")
+    script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+    script(type='text/javascript', src='js/jquery.ba-cond.min.js')
+    script(type='text/javascript', src='js/jquery.slitslider.js')
+    script(type='text/javascript').
+      $(function() {
+      var Page = (function() {
+      var $nav = $( '#nav-dots > span' ),
+      slitslider = $( '#slider' ).slitslider( {
+      onBeforeChange : function( slide, pos ) {
+      $nav.removeClass( 'nav-dot-current' );
+      $nav.eq( pos ).addClass( 'nav-dot-current' );
+      }
+      } ),
+      init = function() {
+      initEvents();
+      },
+      initEvents = function() {
+      $nav.each( function( i ) {
+      $( this ).on( 'click', function( event ) {
+      var $dot = $( this );
+      if( !slitslider.isActive() ) {
+      $nav.removeClass( 'nav-dot-current' );
+      $dot.addClass( 'nav-dot-current' );
+      }
+      slitslider.jump( i + 1 );
+      return false;
+      } );
+      } );
+      };
+      return { init : init };
+      })();
+      Page.init();
+      /**
+      * Notes:
+      *
+      * example how to add items:
+      */
+      /*
+      var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+      // call the plugin's add method
+      ss.add($items);
+      */
+      });
+
+
 
 
 

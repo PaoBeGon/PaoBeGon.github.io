@@ -9,26 +9,26 @@ span{
 	margin-left: -2px;
 }
 .fondog{
-	background-color:$color_cremac;
+	background:url("../img/fond.jpg")
+	// background-color:#020015;
 }
 // header
 .fondo-header{
-	background:url("../img/fondo1.png")no-repeat;
+	background:url("../img/fondo3.jpg")no-repeat;
 	background-size:cover;
 }
 .nav{
 	margin-top:2%;	
 	margin-left:50px;
 }
-.nav img{
+#corazon{
 	float: left;
-	margin-top: 2%;
-	padding-top:15%;
+	margin-top:-1%;
 	width: 105px;
 	position: absolute;
 	display: block;
-		margin: 20px;
-    // -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	margin-left:40%; 
+    // -webkit-box-s1%;hadow: 4px 4px 4px rgba(0,0,0,0.2);
     // -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
     // box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
     -webkit-transition: all 3s ease-out;
@@ -59,11 +59,11 @@ span{
 .ca-menu li{
     width: 115px;
     height: 115px;
-    border: 4px solid $color_crema;
+    border: 2px solid $color_guinda;
     overflow: hidden;
     position: relative;
     float:left;
-    background: #fff;
+    background: $color_cremac;
     margin-left:-10px;
     -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
@@ -85,13 +85,13 @@ span{
     width: 100%;
     height: 100%;
     display: block;
-    color: $color_crema;
+    color: $color_guinda;
     position: relative;
 }
 .ca-icon{
     font-family: 'WebSymbolsRegular', cursive;
     font-size: 10px;
-    color: $color_crema;
+    color: $color_guinda;
     line-height: 60px;
     position: absolute;
     width: 100%;
@@ -115,22 +115,24 @@ span{
     margin-left: -85px;
     opacity: 0.8;
     text-align: center;
-    color: $color_crema;
+    color: $color_guinda;
 }
 .ca-sub{
     display: none;
 }
 .ca-menu li:hover{
-    border-color: $color_guinda;
+    // border-color: $color_crema;
     z-index: 999;
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    transform: scale(1.1);    
+    background-color:$color_guinda;
+    border:2px solid $color_cremac;
 }
 .ca-menu li:hover .ca-icon{
-    color: $color_guinda;
+    color: $color_cremac;
     font-size: 20px;
     text-shadow: 0px 0px 1px #000;
     -webkit-animation: moveFromBottom 100ms ease;
@@ -138,7 +140,7 @@ span{
     -ms-animation: moveFromBottom 100ms ease;
 }
 .ca-menu li:hover .ca-main{
-    color: $color_guinda;
+    color: $color_cremac;
     -webkit-animation: moveFromBottom 500ms ease;
     -moz-animation: moveFromBottom 500ms ease;
     -ms-animation: moveFromBottom 500ms ease;
@@ -216,16 +218,21 @@ span{
 	// padding:2px;
 	text-decoration:none;
 }
+.presentacion{
+	margin-left:-5px;
+}
 .presentacion img{
 	width:390px;
-	padding-top:25%;
-	padding-bottom:15%;
+	margin-top:23%;
+	margin-bottom:15%;
 	margin-left:160px;
+	// border:10px solid #020015;
+	border-radius:100%;
 }
 .presentacion h1{
 	font-family:$fuente;
-	color:$color_guinda;
-	margin-top:250px;
+	color:$color_cremac;
+	margin-top:30%;
 	font-size:70px;
 	animation-duration: 3s;
   	animation-name: slidein;
@@ -236,6 +243,7 @@ span{
 	font-size:20px;
 	animation-duration: 3s;
   	animation-name: slidein;
+  	margin-bottom: 5%;
 }
 @keyframes slidein {
   from {
@@ -250,10 +258,9 @@ span{
 }
 // content
 .fondo-content{
-	border:2px solid $color_guinda;
-	margin-top:70px;
+	margin-top:12%;
 	margin-bottom:70px;
-	background-color:#fff;
+	background-color:$color_cremac;
 }
 .yo p{
 	color:$color_guinda;
@@ -265,8 +272,8 @@ span{
 .img-interest img{
 	width:150px;
 	// float:center;
-	border:2px solid $color_guinda;
-	border-radius:100%;
+	// border:2px solid $color_guinda;
+	// border-radius:100%;
 	margin-left:20%;
 	margin-bottom:20%;
 }
@@ -281,38 +288,42 @@ span{
 	background-attachement:fixed;
 }
 .fondo-content2{
-	background:url("../img/fondo2.jpg");
-	background-size:contain;
+	// background:url("../img/fondo2.jpg");
+	// background-size:contain;
+	background-color:$color_guinda;
+	margin-top:18%;
 }
 .habilidades{
 	margin-top:4%;
 	padding-bottom:2%;
 }
-.habilidades img{
-	width:150px;
-	opacity:0.7;
-	padding:0;
-	transition: all 2s ease-in-out;
+.sl-slide-inner img{
+	width:140px;
+	display: inline-block;
+	border: 2px solid $color_cremac;
+	padding:1%;
+	border-radius:100%;
+	float:right;
+	margin-top:-3%;
 }
-.habilidades img:hover{
-	width:150px;
-	opacity:0.9;
-	padding:0;
-	transform: rotate(720deg) scale(1.1);
+.sl-slide-inner h3{
+	color:$color_cremac;
+	margin-left:30%;
+	font-family:$fuente;
 }
-.thumbnail{
-	width:200px;
-	margin-right:5%;
+.sl-slide-inner p{
+	color:$color_cremac;
+	font-size:20px;
+	font-family:$fuentep;
 }
+
 // content3
 .proyect{
 	position:relative;
 	width:504;	
-	margin-top:70px;
-	margin-bottom:5%;
-	border:2px solid $color_guinda;
+	margin-top:12%;
 	padding:2%;
-	background-color:$color_guinda;
+	background-color:$color_cremac;
 	z-index: 0;
 }
 .proyect1{
@@ -328,7 +339,7 @@ span{
 .proyect img{
 	position:relative;
 	z-index: 2;
-	box-shadow:1px 1px 4px $color_crema;
+	box-shadow:1px 1px 4px $color_guinda;
 	width:400px;
 	margin-left:15%;
 	margin-bottom:2%;
@@ -403,12 +414,12 @@ span{
 }
 .gif h2{
 	font-family:$fuente;
-	color:$color_guinda;
+	color:$color_cremac;
 	font-size:50px;
 	margin-top:8%;
 }
 .fondo-footer{
-	background:url("../img/fondo1.png");
+	background:url("../img/fondo3.png");
 	padding:2%;
 }
 // .foot{
@@ -418,7 +429,7 @@ span{
 // }
 	// margin-top: 10%;
 .fondo-footer{
-	background:url("../img/fondo1.png");
+	background:url("../img/fondo3.jpg");
 	padding: 2%;
 }
 .foot img{
@@ -428,7 +439,7 @@ span{
 .foot img:hover{
 	width: 50px;
 	margin-left: 39%;
-	border:2px dashed $color_guinda;
+	border:2px dashed $color_cremac;
 	border-radius:100%;
 	padding:2%;
 }
