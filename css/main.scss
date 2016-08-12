@@ -1,6 +1,6 @@
 $fuente:'Lobster Two', cursive;
 $fuentep:'Pontano Sans', sans-serif;
-$color_guinda:#B23256;
+$color_guinda:#841720;
 $color_crema:#FCD47D;
 $color_fram:#FC0037;
 $color_plomo:#F1F1F1;
@@ -10,12 +10,21 @@ span{
 }
 .fondog{
 	background:url("../img/fond.jpg")
+
 	// background-color:#020015;
 }
 // header
 .fondo-header{
-	background:url("../img/fondo3.jpg")no-repeat;
-	background-size:cover;
+	background:url("../img/fondo3.jpg") 50% 0 no-repeat fixed;
+	min-height: 700px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .nav{
 	margin-top:2%;	
@@ -87,6 +96,10 @@ span{
     display: block;
     color: $color_guinda;
     position: relative;
+}
+.ca-menu a:hover, .ca-menu a.active
+{
+	color: $color_guinda;
 }
 .ca-icon{
     font-family: 'WebSymbolsRegular', cursive;
@@ -176,32 +189,6 @@ span{
         opacity: 1;        
     }
 }
-// #ul{
-// 	li{
-// 	width: 130px;
-// 	height: 130px;
-// 	border: 10px solid #f6f6f6;
-// 	overflow: hidden;
-// 	position: relative;
-// 	padding-left: 35%;
-// 	background: #fff;
-// 	margin-right: 4px;
-// 	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-// 	border-radius: 125px;
-// 	transition: all 400 ms linear;}
-// 	li:hover{
-//     border-color: #333;
-//     z-index: 999;
-//     transform: scale(1.1);}
-//     li:hover .ca-icon{
-//     color: #000;
-//     font-size: 60px;
-//     text-shadow: 0px 0px 1px #000;
-//     animation: moveFromBottom 300ms ease;}
-//     li:hover .ca-main{
-//     color: #000;
-//     animation: moveFromBottom 500ms ease;}
-// }
 .nav a{
 	font-size:25px;
 	font-family:$fuente;
@@ -419,18 +406,16 @@ span{
 	margin-top:8%;
 }
 .fondo-footer{
-	background:url("../img/fondo3.png");
-	padding:2%;
-}
-// .foot{
-// 	margin-top:5%;
-// 	margin-bottom:5%;
-
-// }
-	// margin-top: 10%;
-.fondo-footer{
-	background:url("../img/fondo3.jpg");
-	padding: 2%;
+	background:url("../img/fondo3.jpg") 50% 0 no-repeat fixed;
+	min-height: 700px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .foot img{
 	width: 50px;
