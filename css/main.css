@@ -481,7 +481,7 @@ span {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 720px) {
   .presentacion img {
     margin-left: 12%;
     margin-top: 45%;
@@ -489,34 +489,34 @@ span {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 720px) {
   .presentacion h1 {
     margin-top: -5%;
     font-size: 20px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 720px) {
   .presentacion h2 {
     margin-top: 2%;
     font-size: 20px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 720px) {
   .img-interest img {
     width: 90px;
     margin-left: 10%;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 720px) {
   .habilidades img {
     margin-left: 10%;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 720px) {
   .proyect img {
     width: 250px;
     margin-left: -5%;
@@ -524,14 +524,14 @@ span {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 720px) {
   .gif img {
     width: 150px;
     margin-left: 2%;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 720px) {
   .gif h2 {
     font-size: 25px;
     margin-top: -1%;
@@ -539,7 +539,7 @@ span {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 720px) {
   .foot p {
     margin-top: 2%;
   }
