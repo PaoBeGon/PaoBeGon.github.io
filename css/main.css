@@ -528,13 +528,16 @@ span {
 .gif img {
   margin-left: 25%;
   border-radius: 100%;
+  margin-top: 30%;
+  width: 200px;
 }
 
 .gif h2 {
   font-family: "Lobster Two", cursive;
-  color: #FFF0C9;
-  font-size: 50px;
-  margin-top: 8%;
+  color: #800040;
+  font-size: 60px;
+  margin-top: 35%;
+  margin-left: -20%;
 }
 
 .fondo-footer {
@@ -550,20 +553,43 @@ span {
 }
 
 .foot img {
-  width: 50px;
-  margin-left: 39%;
-}
-
-.foot img:hover {
-  width: 50px;
-  margin-left: 39%;
-  border: 2px dashed #FFF0C9;
-  border-radius: 100%;
+  width: 150px;
+  margin-top: 18%;
+  margin-left: 18%;
   padding: 2%;
 }
 
+.foot img:hover {
+  width: 150px;
+  border: 3px dashed #800040;
+  border-radius: 100%;
+  padding: 2%;
+  -webkit-animation: 3s rotate linear infinite;
+  animation: 3s rotate linear infinite;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 .foot p {
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Lobster Two", cursive;
   color: #800040;
   margin-top: 2%;
@@ -577,19 +603,27 @@ span {
   text-decoration: none;
 }
 
-#correo {
-  width: 170px;
-  border: none;
-  margin-top: 5px;
+.copyrigth {
+  background-color: #800040;
+  padding: 1% 0;
+  margin-top: -4%;
+}
+
+.copyrigth p {
+  font-family: "Lobster Two", cursive;
+  color: #FFF0C9;
 }
 
 @media (max-width: 320px) {
-  .nav img {
-    margin-left: 12%;
+  .ca-menu li {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #800040;
+    overflow: hidden;
+    position: relative;
     float: left;
-    margin-top: 5%;
-    position: absolute;
-    display: block;
+    background: #FFF0C9;
+    margin-left: -10px;
   }
 }
 
