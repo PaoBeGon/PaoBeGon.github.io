@@ -615,19 +615,6 @@ span {
 }
 
 @media (max-width: 320px) {
-  .ca-menu li {
-    width: 55px;
-    height: 55px;
-    border: 2px solid #800040;
-    overflow: hidden;
-    position: relative;
-    float: left;
-    background: #FFF0C9;
-    margin-left: -10px;
-  }
-}
-
-@media (max-width: 320px) {
   .nav a {
     font-size: 10px;
   }
