@@ -4,17 +4,20 @@ html(lang='en')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title Paola Begazo:.
+    title .::Paola Begazo::.
     link(rel="Shortcut icon" href="favicon.ico" type="image/x-icon")
     link(rel="stylesheet", href="css/main.css")
     // Bootstrap Core CSS
     link(rel='stylesheet', href='css/bootstrap.min.css', type='text/css')
+    link(href='css/ihover.css', rel='stylesheet')
     // Custom Fonts
     link(href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css')
     link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css', type='text/css')
     link(rel='shortcut icon', href='../favicon.ico')
     link(rel='stylesheet', type='text/css', href='css/custom.css')
+    script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.6/jquery.smoove.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js')
     script(type='text/javascript', src='js/modernizr.custom.79639.js')
@@ -56,17 +59,18 @@ html(lang='en')
 
                 .row.presentacion
                     .col-md-6
-                        img.img-responsive.aniview.slow(av-animation='fadeIn')(src="img/pao.jpg")
+                        img.img-responsive.element-animation(src="img/pao.jpg")
                     .col-md-6
-                        h1.text-center Paola<br>Begazo Gonzales
-                        h2.text-center Frontend Developer
+                        h1.text-center <strong>Paola<br>Begazo Gonzales</strong>
+                        h2.text-center<strong>Front end Developer</strong>
                         img#corazon(src="img/corazon.png")
     #yo
     content
         .container-fluid.fondo-content
             .container
                 .row.yo
-                    p.text-center Hola! soy Pao y descubrí el código gracias a Laboratoria, aunque siempre me llamó<br>la atencion el mundo de la tecnología y la programación entonces fue asi que se volvio una de mis pasiones.<br>Además de ser una coder, soy una apasionada de la comida y la cocteleria Peruana por eso también soy Chef.<br>Soy una persona positiva, me encantan los perritos y tengo muchas ganas de seguir creciendo como persona y como profesional.<br>¡VOY POR MÁS!
+                    h1.text-center Hola!!!
+                    p.text-center Soy Pao y descubrí el código gracias a Laboratoria, siempre me gustó la tecnología y la programación asi que se volvio<br> una de mis pasiones.Además de ser una coder, soy Chef ya que me encanta la comida y cocteleria símbolo de nuestro Perú.<br>Soy una persona muy positiva, me encantan los perritos y tengo muchas ganas de seguir creciendo como persona y como profesional.<br><em>¡Voy por más!</em>
 
                 .row.img-interest
                     .col-md-3
@@ -74,9 +78,9 @@ html(lang='en')
                     .col-md-3
                         img.img-responsive(src="img/dog.png")
                     .col-md-3
-                        img.img-responsive(src="img/chef.png")
+                        img#chef.img-responsive(src="img/chef.png")
                     .col-md-3
-                        img.img-responsive(src="img/paz.png")
+                        img#paz.img-responsive(src="img/paz.png")
     #habilidades
     content2#efepara
         .container-fluid.fondo-content2
@@ -127,38 +131,62 @@ html(lang='en')
                           span
     #proyectos
     content3
-        .container-fluid.fondo-content3.proyect
-            .container
-                .row
-                    .col-md-6
-                        .proyect1
-                            a(href="#")
-                                img.img-responsive(src="img/akakau.png")
-                                span.info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        .proyect2
-                            a(href="#")
-                                img.img-responsive(src="img/danza.png")
-                                span.info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        .proyect3
-                            a(href="#")
-                                img.img-responsive(src="img/eco.png")
-                                span.info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    .col-md-6
-                        .proyect4
-                            a(href="#")
-                                img.img-responsive(src="img/flat.png")
-                                span.info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        .proyect5
-                            a(href="#")
-                                img.img-responsive(src="img/wpp.png")
-                                span.info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        .proyect6
-                            a(href="https://primes-paolabg.c9users.io/primes.html")
-                                img.img-responsive(src="img/primes.png")
-                                span.info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      .container-fluid.proyect
+        .container
+          .row
+            .col-md-6
+              .ih-item.square.colored.effect12.left_to_right
+                a(href='#')
+                  .img
+                    img.img-responsive(src="img/akakau.png")
+                  .info
+                    h3 Akakau
+                    p Proyecto realizado para la primera hackaton de laboratoria.
+            .col-md-6
+              .ih-item.square.colored.effect12.left_to_right
+                a(href='#')
+                  .img
+                    img.img-responsive(src="img/danza.png")
+                  .info
+                    h3 Escuela de Danza
+                    p Proyecto realizado en clases 100% responsive
+          .row
+            .col-md-6
+              .ih-item.square.colored.effect12.left_to_right
+                a(href='#')
+                  .img
+                    img.img-responsive(src="img/eco.png")
+                  .info
+                    h3 Eco-munidad
+                    p Pproyecto realizado en clases, erfeccionando bootstrap
+            .col-md-6
+              .ih-item.square.colored.effect12.left_to_right
+                a(href='#')
+                  .img
+                    img.img-responsive(src="img/flat.png")
+                  .info
+                    h3 Flatness
+                    p Proyecto 100% responsive realizado con sass y jade
+          .row
+            .col-md-6
+              .ih-item.square.colored.effect12.left_to_right
+                a(href='#')
+                  .img
+                    img.img-responsive(src="img/wpp.png")
+                  .info
+                    h3 Whatsap Team
+                    p Chat en linea, realizado en clases
+            .col-md-6
+              .ih-item.square.colored.effect12.left_to_right
+                a(href='#')
+                  .img
+                    img.img-responsive(src="img/primes.png")
+                  .info
+                    h3 Primes
+                    p Proyecto realizado en clases
     #contacto
     section(data-type='parallax_section', data-speed='10')
-        .container-fluid.fondo-header
+        .container-fluid.fondo-footer
             .container
                 .row.gif
                     .col-md-6                   
@@ -248,6 +276,7 @@ html(lang='en')
       });
       console.log(objSection.position().top);
       }
+
 
 
 

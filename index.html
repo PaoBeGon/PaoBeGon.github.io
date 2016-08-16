@@ -4,17 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Paola Begazo:.</title>
+    <title>.::Paola Begazo::.</title>
     <link rel="Shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <!-- Bootstrap Core CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link href="css/ihover.css" rel="stylesheet">
     <!-- Custom Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.6/jquery.smoove.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
@@ -52,10 +55,10 @@
             </ul>
           </div>
           <div class="row presentacion">
-            <div class="col-md-6"><img av-animation="fadeIn" src="img/pao.jpg" class="img-responsive aniview slow"></div>
+            <div class="col-md-6"><img src="img/pao.jpg" class="img-responsive element-animation"></div>
             <div class="col-md-6">
-              <h1 class="text-center">Paola<br>Begazo Gonzales</h1>
-              <h2 class="text-center">Frontend Developer</h2><img id="corazon" src="img/corazon.png">
+              <h1 class="text-center"><strong>Paola<br>Begazo Gonzales</strong></h1>
+              <h2 class="text-center"><strong>Front end Developer</strong></h2><img id="corazon" src="img/corazon.png">
             </div>
           </div>
         </div>
@@ -66,13 +69,14 @@
       <div class="container-fluid fondo-content">
         <div class="container">
           <div class="row yo">
-            <p class="text-center">Hola! soy Pao y descubrí el código gracias a Laboratoria, aunque siempre me llamó<br>la atencion el mundo de la tecnología y la programación entonces fue asi que se volvio una de mis pasiones.<br>Además de ser una coder, soy una apasionada de la comida y la cocteleria Peruana por eso también soy Chef.<br>Soy una persona positiva, me encantan los perritos y tengo muchas ganas de seguir creciendo como persona y como profesional.<br>¡VOY POR MÁS!</p>
+            <h1 class="text-center">Hola!!!</h1>
+            <p class="text-center">Soy Pao y descubrí el código gracias a Laboratoria, siempre me gustó la tecnología y la programación asi que se volvio<br> una de mis pasiones.Además de ser una coder, soy Chef ya que me encanta la comida y cocteleria símbolo de nuestro Perú.<br>Soy una persona muy positiva, me encantan los perritos y tengo muchas ganas de seguir creciendo como persona y como profesional.<br><em>¡Voy por más!</em></p>
           </div>
           <div class="row img-interest">
             <div class="col-md-3"><img src="img/lap.png" class="img-responsive"></div>
             <div class="col-md-3"><img src="img/dog.png" class="img-responsive"></div>
-            <div class="col-md-3"><img src="img/chef.png" class="img-responsive"></div>
-            <div class="col-md-3"><img src="img/paz.png" class="img-responsive"></div>
+            <div class="col-md-3"><img id="chef" src="img/chef.png" class="img-responsive"></div>
+            <div class="col-md-3"><img id="paz" src="img/paz.png" class="img-responsive"></div>
           </div>
         </div>
       </div>
@@ -134,18 +138,60 @@
     </content2>
     <div id="proyectos"></div>
     <content3>
-      <div class="container-fluid fondo-content3 proyect">
+      <div class="container-fluid proyect">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div class="proyect1"><a href="#"><img src="img/akakau.png" class="img-responsive"><span class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></a></div>
-              <div class="proyect2"><a href="#"><img src="img/danza.png" class="img-responsive"><span class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></a></div>
-              <div class="proyect3"><a href="#"><img src="img/eco.png" class="img-responsive"><span class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></a></div>
+              <div class="ih-item square colored effect12 left_to_right"><a href="#">
+                  <div class="img"><img src="img/akakau.png" class="img-responsive"></div>
+                  <div class="info">
+                    <h3>Akakau</h3>
+                    <p>Proyecto realizado para la primera hackaton de laboratoria.</p>
+                  </div></a></div>
             </div>
             <div class="col-md-6">
-              <div class="proyect4"><a href="#"><img src="img/flat.png" class="img-responsive"><span class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></a></div>
-              <div class="proyect5"><a href="#"><img src="img/wpp.png" class="img-responsive"><span class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></a></div>
-              <div class="proyect6"><a href="https://primes-paolabg.c9users.io/primes.html"><img src="img/primes.png" class="img-responsive"><span class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></a></div>
+              <div class="ih-item square colored effect12 left_to_right"><a href="#">
+                  <div class="img"><img src="img/danza.png" class="img-responsive"></div>
+                  <div class="info">
+                    <h3>Escuela de Danza</h3>
+                    <p>Proyecto realizado en clases 100% responsive</p>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="ih-item square colored effect12 left_to_right"><a href="#">
+                  <div class="img"><img src="img/eco.png" class="img-responsive"></div>
+                  <div class="info">
+                    <h3>Eco-munidad</h3>
+                    <p>Pproyecto realizado en clases, erfeccionando bootstrap</p>
+                  </div></a></div>
+            </div>
+            <div class="col-md-6">
+              <div class="ih-item square colored effect12 left_to_right"><a href="#">
+                  <div class="img"><img src="img/flat.png" class="img-responsive"></div>
+                  <div class="info">
+                    <h3>Flatness</h3>
+                    <p>Proyecto 100% responsive realizado con sass y jade</p>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="ih-item square colored effect12 left_to_right"><a href="#">
+                  <div class="img"><img src="img/wpp.png" class="img-responsive"></div>
+                  <div class="info">
+                    <h3>Whatsap Team</h3>
+                    <p>Chat en linea, realizado en clases</p>
+                  </div></a></div>
+            </div>
+            <div class="col-md-6">
+              <div class="ih-item square colored effect12 left_to_right"><a href="#">
+                  <div class="img"><img src="img/primes.png" class="img-responsive"></div>
+                  <div class="info">
+                    <h3>Primes</h3>
+                    <p>Proyecto realizado en clases</p>
+                  </div></a></div>
             </div>
           </div>
         </div>
@@ -153,7 +199,7 @@
     </content3>
     <div id="contacto"></div>
     <section data-type="parallax_section" data-speed="10">
-      <div class="container-fluid fondo-header">
+      <div class="container-fluid fondo-footer">
         <div class="container">
           <div class="row gif">
             <div class="col-md-6">                  <img src="img/gif.gif"></div>
