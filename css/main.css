@@ -614,6 +614,13 @@ span {
 }
 
 @media (max-width: 720px) {
+  .nav {
+    margin-top: 5%;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .ca-menu li {
     width: 60px;
     height: 60px;
@@ -621,7 +628,6 @@ span {
     overflow: hidden;
     position: relative;
     float: center;
-    left: 19%;
     background: #FFF0C9;
     -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -701,7 +707,7 @@ span {
     width: 40px;
     position: absolute;
     display: block;
-    margin-left: 30%;
+    margin-left: 27%;
     margin-bottom: 5%;
     -webkit-transition: all 3s ease-out;
     -moz-transition: all 0.5s ease;
