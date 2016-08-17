@@ -733,13 +733,12 @@ to {-webkit-transform: rotate(360deg);}}
   font-family:$fuentep;
 }
 }
-@media (max-width:720px){
-.img img {
-  width: 50%;
-  height: 50%;
-  margin-left: -100%;
-}
-}
+// @media (max-width:720px){
+// .img-interest img{
+// 	width:90px;
+// 	margin-left:10%;
+// }
+// }
 // @media (max-width:720px){
 // .habilidades img{
 // 	margin-left:10%;

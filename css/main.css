@@ -757,11 +757,3 @@ span {
     font-family: "Pontano Sans", sans-serif;
   }
 }
-
-@media (max-width: 720px) {
-  .img img {
-    width: 50%;
-    height: 50%;
-    margin-left: -100%;
-  }
-}
