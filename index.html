@@ -17,7 +17,9 @@
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
+    <script src="js/flowup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
     <noscript>
       <link rel="stylesheet" type="text/css" href="css/styleNoJS.css">
@@ -52,7 +54,8 @@
             </ul>
           </div>
           <div class="row presentacion">
-            <div class="col-md-6"><img src="img/pao.jpg" class="img-responsive element-animation"></div>
+            <div class="col-md-6"><img src="img/pao.jpg" class="img-responsive">
+            </div>
             <div class="col-md-6">
               <h1 class="text-center"><strong>Paola<br>Begazo Gonzales</strong></h1>
               <h2 class="text-center"><strong>Front end Developer</strong></h2><img id="corazon" src="img/corazon.png">
@@ -79,7 +82,7 @@
       </div>
     </content>
     <div id="habilidades"></div>
-    <content2 id="efepara">
+    <content id="efepara">
       <div class="container-fluid fondo-content2">
         <div class="container demo-2">
           <div class="row habilidades">
@@ -132,9 +135,9 @@
           </div>
         </div>
       </div>
-    </content2>
+    </content>
     <div id="proyectos"></div>
-    <content3>
+    <content>
       <div class="container-fluid proyect">
         <div class="container">
           <div class="row">
@@ -147,7 +150,7 @@
                   </div></a></div>
             </div>
             <div class="col-md-6">
-              <div class="ih-item square colored effect12 left_to_right"><a href="#">
+              <div class="ih-item square colored effect12 left_to_right"><a target="_blank" href="https://paobegon.github.io/tictactoe.github.io/.">
                   <div class="img"><img src="img/danza.png" class="img-responsive"></div>
                   <div class="info">
                     <h3>Tic Tac Toe</h3>
@@ -193,9 +196,9 @@
           </div>
         </div>
       </div>
-    </content3>
+    </content>
     <div id="contacto"></div>
-    <section data-type="parallax_section" data-speed="10">
+    <content>
       <div class="container-fluid fondo-footer">
         <div class="container">
           <div class="row gif">
@@ -222,7 +225,7 @@
           <p class="text-center">La única manera de hacer un gran trabajo, es amar lo que haces. Si no lo has encontrado, sigue buscando. No te conformes. Steve Jobs ©Paola Begazo Gonzales 2016</p>
         </div>
       </div>
-    </section>
+    </content>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
     <script type="text/javascript" src="js/jquery.slitslider.js"></script>
@@ -289,6 +292,9 @@
       });
       console.log(objSection.position().top);
       }
+      $(document).ready(function() {
+      $("body").flowUp("content", { transalteY: 350, duration: 1 });
+      });
     </script>
   </body>
 </html>

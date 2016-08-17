@@ -25,7 +25,7 @@
   width: 316px;
   height: auto;
   border: 8px solid #fff;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   margin-bottom: 2%;
   margin-left: 20%;
 }
@@ -45,10 +45,10 @@
 }
 .ih-item.square.effect12.colored .info {
   background: #800040;
-  background: rgba(128, 0, 64, 0.6);
+  background: rgba(128, 0, 64, 0.9);
 }
 .ih-item.square.effect12.colored .info h3 {
-  background: rgba(255, 240, 201, 0.6);
+  background: rgba(255, 240, 201, 0.9);
   font-family: 'Lobster Two', cursive;
 }
 .ih-item.square.effect12 .img {
@@ -58,7 +58,7 @@
 }
 .ih-item.square.effect12 .info {
   background: #800040;
-  background: rgba(128, 0, 64, 0.6);
+  background: rgba(128, 0, 64, 0.9);
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.35s ease-in;
@@ -66,7 +66,7 @@
   transition: all 0.35s ease-in;
 }
 .ih-item.square.effect12 .info h3 {
-  color: #FFF0C9;
+  color: #800040;
   text-align: center;
   font-family: 'Lobster Two', cursive;
   font-size: 25px;

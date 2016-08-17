@@ -19,7 +19,9 @@ html(lang='en')
     //- script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js')
     //- script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.6/jquery.smoove.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js')
+    script(src="js/flowup.js")
     script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js')
+    script(src="http://code.jquery.com/jquery-1.10.1.min.js")
     script(type='text/javascript', src='js/modernizr.custom.79639.js')
     noscript
       link(rel='stylesheet', type='text/css', href='css/styleNoJS.css')
@@ -58,7 +60,8 @@ html(lang='en')
 
                 .row.presentacion
                     .col-md-6
-                        img.img-responsive.element-animation(src="img/pao.jpg")
+                        //- img.img-responsive.element-animation(src="img/pao.jpg" onmouseover="this.src='img/pb.jpg';" onmouseout="this.src='img/pao.jpg';")
+                        img.img-responsive(src="img/pao.jpg")
                     .col-md-6
                         h1.text-center <strong>Paola<br>Begazo Gonzales</strong>
                         h2.text-center<strong>Front end Developer</strong>
@@ -81,7 +84,7 @@ html(lang='en')
                     .col-md-3
                         img#paz.img-responsive(src="img/paz.png")
     #habilidades
-    content2#efepara
+    content#efepara
         .container-fluid.fondo-content2
             .container.demo-2
                 .row.habilidades
@@ -129,7 +132,7 @@ html(lang='en')
                           span
                           span
     #proyectos
-    content3
+    content
       .container-fluid.proyect
         .container
           .row
@@ -143,7 +146,7 @@ html(lang='en')
                     p Proyecto realizado para la primera hackaton de laboratoria.
             .col-md-6
               .ih-item.square.colored.effect12.left_to_right
-                a(href='#')
+                a(target='_blank', href='https://paobegon.github.io/tictactoe.github.io/.')
                   .img
                     img.img-responsive(src="img/danza.png")
                   .info
@@ -184,7 +187,7 @@ html(lang='en')
                     h3 Primes
                     p Proyecto realizado en clases
     #contacto
-    section(data-type='parallax_section', data-speed='10')
+    content
         .container-fluid.fondo-footer
             .container
                 .row.gif
@@ -277,6 +280,9 @@ html(lang='en')
       });
       console.log(objSection.position().top);
       }
+      $(document).ready(function() {
+      $("body").flowUp("content", { transalteY: 350, duration: 1 });
+      });
 
 
 
