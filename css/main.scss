@@ -254,8 +254,9 @@ span{
 }
 .fondog{
 	background:url("../img/fond.jpg");
-  	background-attachment: fixed;
-  	background-size:cover;
+  background-attachment: fixed;
+  background-size:cover;
+  opacity: 0.9;
 
 	// background-color:#020015;
 }
@@ -375,7 +376,7 @@ span{
     -ms-transform: scale(1.1);
     transform: scale(1.1);    
     background-color:$color_guinda;
-    border:2px solid $color_cremac;
+    border:4px solid $color_cremac;
 }
 .ca-menu li:hover .ca-icon{
     color: $color_cremac;
@@ -576,7 +577,7 @@ span{
   margin-left: -20%;
 }
 .fondo-footer{
-	min-height: 700px;
+	min-height: 620px;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1920px;
@@ -587,13 +588,13 @@ span{
 	background-size: cover;
 }
 .foot img{
-	width: 150px;
+	width: 100px;
   margin-top: 18%;
-	margin-left: 18%;
+	margin-left: 30%;
   padding: 2%;
 }
 .foot img:hover{
-	width: 150px;
+	width: 100px;
   border:3px dashed $color_guinda;
   border-radius: 100%;
 	padding:2%;
@@ -608,8 +609,9 @@ to {transform: rotate(360deg);}}
 to {-webkit-transform: rotate(360deg);}}
 
 .foot p{
-	font-size: 30px;
-	font-family: $fuente;
+	font-size: 20px;
+	font-family: $fuentep;
+  font-weight: bold;
 	color: $color_guinda;
 	margin-top:2%;
 }
@@ -627,45 +629,9 @@ to {-webkit-transform: rotate(360deg);}}
 .copyrigth p{
   font-family: $fuente;
   color: $color_cremac;
+  font-size: 18px;
 }
-
-// @media (max-width:320px){
-// .nav{
-//   border-bottom: 0;
-//   height: auto;
-// }
-// .ca-menu{
-//   display: none;
-//   height: auto;
-//   width: 100%;
-// }
-// .ca-menu li{
-//   width: 50%;
-//   float: left;
-//   position: relative;
-// }
-// .nav a{
-//   text-align: left;
-//   width: 100%;
-//   text-indent: 25px;
-// }
-// nav a#pull {
-//         display: block;
-//         background-color: #666;
-//         width: 100%;
-//         position: relative;
-//     }
-// nav a#pull:after {
-//   content:"";
-//   background: url('nav-icon.png') no-repeat;
-//   width: 30px;
-//   height: 30px;
-//   display: inline-block;
-//   position: absolute;
-//   right: 15px;
-//   top: 10px;
-//     }
-// }
+// media-responsive
 @media (max-width:320px){
 .nav a{
 	font-size:10px;

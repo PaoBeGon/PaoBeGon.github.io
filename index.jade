@@ -16,8 +16,8 @@ html(lang='en')
     link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css', type='text/css')
     link(rel='shortcut icon', href='../favicon.ico')
     link(rel='stylesheet', type='text/css', href='css/custom.css')
-    script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-    script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.6/jquery.smoove.min.js')
+    //- script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    //- script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.6/jquery.smoove.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js')
     script(type='text/javascript', src='js/modernizr.custom.79639.js')
@@ -25,7 +25,6 @@ html(lang='en')
       link(rel='stylesheet', type='text/css', href='css/styleNoJS.css')
   body.fondog
     #inicio
-    section.fondo-header(data-type='parallax_section', data-speed='10')
         .container-fluid.fondo-header
             .container
                 .row.nav
@@ -88,7 +87,7 @@ html(lang='en')
                 .row.habilidades
                       #slider.sl-slider-wrapper
                         .sl-slider
-                          .sl-slide(data-orientation='horizontal', data-slice1-rotation='-25', data-slice2-rotation='-25', data-slice1-scale='2', data-slice2-scale='2')
+                          .sl-slide(data-orientation='vertical', data-slice1-rotation='-25', data-slice2-rotation='-25', data-slice1-scale='2', data-slice2-scale='2')
                             .sl-slide-inner
                               .bg-img.bg-img-1
                               h3 HTML, CSS
@@ -105,7 +104,7 @@ html(lang='en')
                               blockquote
                                 p  Framework de css para maquetar la página web en minutos, sin tocar una sola linea de CSS.
                                 cite Nivel: Avanzado
-                          .sl-slide(data-orientation='horizontal', data-slice1-rotation='3', data-slice2-rotation='3', data-slice1-scale='2', data-slice2-scale='1')
+                          .sl-slide(data-orientation='vertical', data-slice1-rotation='3', data-slice2-rotation='3', data-slice1-scale='2', data-slice2-scale='1')
                             .sl-slide-inner
                               .bg-img.bg-img-3
                               h3 Sass, Jade
@@ -211,7 +210,7 @@ html(lang='en')
                           p.text-center paobegon1@gmail.com
         .container-fluid
           .row.copyrigth
-            p.text-center La única manera de hacer un gran trabajo, es amar lo que haces. Si no lo has encontrado, sigue buscando. No te conformes. Steve Jobs © Paola Begazo Gonzales
+            p.text-center La única manera de hacer un gran trabajo, es amar lo que haces. Si no lo has encontrado, sigue buscando. No te conformes. Steve Jobs ©Paola Begazo Gonzales 2016
     script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
     script(type='text/javascript', src='js/jquery.ba-cond.min.js')
     script(type='text/javascript', src='js/jquery.slitslider.js')
@@ -264,12 +263,11 @@ html(lang='en')
       function initPage()
       {
       $(".ca-menu a").click(navigatePage);
-      initScrollMagic();
       }
       function navigatePage(evt)
       {
       evt.preventDefault();
-      $(".ca-menu li a").removeClass('active');
+      $(".ca-menu a").removeClass('active');
       $(this).addClass('active');
       var section = $(this).attr('href');
       var objSection = $(section);

@@ -258,6 +258,7 @@ span {
   background: url("../img/fond.jpg");
   background-attachment: fixed;
   background-size: cover;
+  opacity: 0.9;
 }
 
 .nav {
@@ -382,7 +383,7 @@ span {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
   background-color: #800040;
-  border: 2px solid #FFF0C9;
+  border: 4px solid #FFF0C9;
 }
 
 .ca-menu li:hover .ca-icon {
@@ -595,7 +596,7 @@ span {
 }
 
 .fondo-footer {
-  min-height: 700px;
+  min-height: 620px;
   margin: 0 auto;
   width: 100%;
   max-width: 1920px;
@@ -607,14 +608,14 @@ span {
 }
 
 .foot img {
-  width: 150px;
+  width: 100px;
   margin-top: 18%;
-  margin-left: 18%;
+  margin-left: 30%;
   padding: 2%;
 }
 
 .foot img:hover {
-  width: 150px;
+  width: 100px;
   border: 3px dashed #800040;
   border-radius: 100%;
   padding: 2%;
@@ -643,8 +644,9 @@ span {
 }
 
 .foot p {
-  font-size: 30px;
-  font-family: "Lobster Two", cursive;
+  font-size: 20px;
+  font-family: "Pontano Sans", sans-serif;
+  font-weight: bold;
   color: #800040;
   margin-top: 2%;
 }
@@ -666,6 +668,7 @@ span {
 .copyrigth p {
   font-family: "Lobster Two", cursive;
   color: #FFF0C9;
+  font-size: 18px;
 }
 
 @media (max-width: 320px) {
