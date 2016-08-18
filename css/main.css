@@ -254,8 +254,10 @@
 
 .img-interest img {
   width: 150px;
-  margin-left: 20%;
-  margin-bottom: 20%;
+  display: inline-block;
+  margin: 0 10px;
+  margin-left: 120px;
+  text-align: center;
 }
 
 .img-interest img:hover {
@@ -292,7 +294,6 @@
   border: 2px solid #FFF0C9;
   padding: 1%;
   border-radius: 100%;
-  float: right;
   margin-top: -3%;
 }
 
@@ -416,11 +417,11 @@
 @media (max-width: 720px) {
   .ca-menu {
     float: center;
-    left: 30px;
+    left: 100px 0;
   }
   .ca-menu li {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     border: 2px solid #800040;
     background: #FFF0C9;
     -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -442,7 +443,7 @@
     position: absolute;
     width: 100%;
     height: 10px;
-    top: -8px;
+    top: -4px;
     text-align: center;
     -webkit-transition: all 400ms linear;
     -moz-transition: all 400ms linear;
@@ -491,30 +492,46 @@
 }
 
 @media (max-width: 720px) {
+  .yo {
+    padding: 0 10px;
+  }
   .yo h1 {
     font-family: "Lobster Two", cursive;
     color: #800040;
     margin: 2%;
+    margin-top: 40px;
     font-size: 40px;
     text-align: center;
   }
   .yo p {
     color: #800040;
     font-family: "Pontano Sans", sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     margin-top: 20px;
     margin-bottom: 10px;
   }
   .img-interest img {
-    width: 150px;
-    margin: auto 25%;
+    width: 50px;
+    display: inline-block;
     text-align: center;
+    margin: 15px 15px;
+  }
+  .img-interest img:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+  }
+  #chef {
+    width: 50px;
+  }
+  #paz {
+    border-radius: 100%;
   }
 }
 
 @media (max-width: 720px) {
   .sl-slide-inner h3 {
-    font-size: 15px;
+    font-size: 13px;
   }
   .sl-slider-wrapper {
     width: 100%;
@@ -524,13 +541,7 @@
   }
   .sl-slide-inner img {
     width: 40px;
-    display: block;
-    border: 2px solid #FFF0C9;
-    padding: 1%;
-    border-radius: 100%;
-    float: right;
-    margin-top: -3%;
-    margin-left: 50%;
+    overflow: hidden;
   }
   .sl-slider blockquote {
     font-size: 10px;
@@ -552,11 +563,17 @@
     font-size: 20px;
     font-family: "Pontano Sans", sans-serif;
   }
+  .fondo-content2 {
+    background-color: #800040;
+    opacity: 0.9;
+    margin-top: 18%;
+  }
 }
 
 @media (max-width: 720px) {
   .ih-item.square.colored.effect12.left_to_right {
-    margin: auto 0;
+    margin: 5px -10px;
+    float: center;
   }
 }
 
@@ -579,7 +596,7 @@
 @media (max-width: 720px) {
   .copyrigth {
     background-color: #800040;
-    padding: 1% 0;
+    padding: 1% 4%;
     margin-top: 10%;
   }
   .copyrigth p {
