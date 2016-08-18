@@ -46,7 +46,8 @@
   border: 5px solid #800040;
   overflow: hidden;
   position: relative;
-  float: left;
+  display: inline-block;
+  list-style: none;
   background: #FFF0C9;
   margin-left: -10px;
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -86,9 +87,9 @@
   line-height: 60px;
   position: absolute;
   width: 100%;
-  height: 60px;
+  height: 100%;
   left: 0px;
-  top: 10px;
+  top: 40px;
   text-align: center;
   -webkit-transition: all 400ms linear;
   -moz-transition: all 400ms linear;
@@ -100,7 +101,7 @@
 .ca-main {
   font-size: 15px;
   position: absolute;
-  top: 25px;
+  top: 55px;
   height: 80px;
   width: 170px;
   left: 50%;
@@ -419,8 +420,6 @@
   .ca-menu {
     margin: 50px auto;
     text-align: center;
-    margin-left: -40px;
-    margin-top: -5px;
   }
   .ca-menu li {
     width: 45px;
@@ -446,7 +445,7 @@
     text-align: center;
     color: #800040;
     width: 100%;
-    top: -10px;
+    top: 10px;
     text-align: center;
     -webkit-transition: all 400ms linear;
     -moz-transition: all 400ms linear;
