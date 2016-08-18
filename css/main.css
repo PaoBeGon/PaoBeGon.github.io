@@ -415,8 +415,8 @@
 
 @media (max-width: 720px) {
   .ca-menu {
-    float: left;
-    left: 0;
+    float: center;
+    left: 30px;
   }
   .ca-menu li {
     width: 50px;
@@ -442,7 +442,6 @@
     position: absolute;
     width: 100%;
     height: 10px;
-    left: 2px;
     top: -8px;
     text-align: center;
     -webkit-transition: all 400ms linear;
@@ -457,7 +456,7 @@
   .presentacion img:first-child {
     width: 170px;
     margin-top: 35%;
-    margin-left: 35px;
+    margin-left: 65px;
     margin-bottom: -55px;
     padding: 1%;
     border-radius: 100%;
@@ -467,7 +466,6 @@
     color: #800040;
     font-size: 30px;
     text-align: center;
-    margin-left: -25%;
   }
   .presentacion h2 {
     font-family: "Pontano Sans", sans-serif;
@@ -475,11 +473,10 @@
     font-size: 20px;
     animation-duration: 3s;
     animation-name: slidein;
-    margin-bottom: 5%;
-    margin-left: -20%;
+    text-align: center;
   }
   #corazon {
-    float: center;
+    left: 15%;
     margin-top: -2%;
     width: 40px;
     position: absolute;
@@ -499,7 +496,7 @@
     color: #800040;
     margin: 2%;
     font-size: 40px;
-    margin-left: -55px;
+    text-align: center;
   }
   .yo p {
     color: #800040;
@@ -507,6 +504,11 @@
     font-size: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
+  }
+  .img-interest img {
+    width: 150px;
+    margin: auto 25%;
+    text-align: center;
   }
 }
 
@@ -549,5 +551,11 @@
     color: #FFF0C9;
     font-size: 20px;
     font-family: "Pontano Sans", sans-serif;
+  }
+}
+
+@media (max-width: 720px) {
+  .ih-item.square.colored.effect12.left_to_right {
+    margin: auto 0;
   }
 }
