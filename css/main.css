@@ -417,7 +417,6 @@
 
 @media (max-width: 720px) {
   .ca-menu {
-    float: left;
     margin: 50px auto;
   }
   .ca-menu li {
