@@ -417,7 +417,7 @@
 
 @media (max-width: 720px) {
   .ca-menu {
-    float: center;
+    float: left;
     margin: 50px auto;
     padding: 0 0 0 38px;
   }
