@@ -5,9 +5,7 @@ $color_crema:#FCD47D;
 $color_fram:#FC0037;
 $color_plomo:#F1F1F1;
 $color_cremac:#FFF0C9;
-span{
-	margin-left: -2px;
-}
+
 .fondog{
 	background:url("../img/fond.jpg");
   background-attachment: fixed;
@@ -394,7 +392,8 @@ to {-webkit-transform: rotate(360deg);}}
 // media-responsive
 @media (max-width:720px){
 .ca-menu{
-  float: center;
+  float: left;
+  left:0;
 }
 .ca-menu li{
     width: 50px;
@@ -435,16 +434,16 @@ to {-webkit-transform: rotate(360deg);}}
   width:170px;
   margin-top:35%;
   margin-left:35px;
+  margin-bottom: -55px;
   padding:1%;
   border-radius:100%;
 }
 .presentacion h1{
   font-family:$fuente;
   color:$color_guinda;
-  margin-top:20%;
-  font-size:70px;
+  font-size:30px;
   text-align: center;
-  margin-left:-15%;
+  margin-left:-25%;
 }
 .presentacion h2{
   font-family:$fuentep;
@@ -453,19 +452,16 @@ to {-webkit-transform: rotate(360deg);}}
   animation-duration: 3s;
   animation-name: slidein;
   margin-bottom: 5%;
-  margin-left: -10%;
+  margin-left: -20%;
 }
 #corazon{
-  float: left;
+  float: center;
   margin-top:-2%;
   width: 40px;
   position: absolute;
   display: block;
   margin-left:27%;
   margin-bottom: 5%;
-    // -webkit-box-s1%;hadow: 4px 4px 4px rgba(0,0,0,0.2);
-    // -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-    // box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
   -webkit-transition: all 3s ease-out;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -478,8 +474,7 @@ to {-webkit-transform: rotate(360deg);}}
   color:$color_guinda;
   margin:2%;
   font-size: 40px;
-  animation-duration: 3s;
-  animation-name: slidein;
+  margin-left: -55px;
 
 }
 .yo p{

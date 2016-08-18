@@ -1,7 +1,3 @@
-span {
-  margin-left: -2px;
-}
-
 .fondog {
   background: url("../img/fond.jpg");
   background-attachment: fixed;
@@ -419,7 +415,8 @@ span {
 
 @media (max-width: 720px) {
   .ca-menu {
-    float: center;
+    float: left;
+    left: 0;
   }
   .ca-menu li {
     width: 50px;
@@ -461,16 +458,16 @@ span {
     width: 170px;
     margin-top: 35%;
     margin-left: 35px;
+    margin-bottom: -55px;
     padding: 1%;
     border-radius: 100%;
   }
   .presentacion h1 {
     font-family: "Lobster Two", cursive;
     color: #800040;
-    margin-top: 20%;
-    font-size: 70px;
+    font-size: 30px;
     text-align: center;
-    margin-left: -15%;
+    margin-left: -25%;
   }
   .presentacion h2 {
     font-family: "Pontano Sans", sans-serif;
@@ -479,10 +476,10 @@ span {
     animation-duration: 3s;
     animation-name: slidein;
     margin-bottom: 5%;
-    margin-left: -10%;
+    margin-left: -20%;
   }
   #corazon {
-    float: left;
+    float: center;
     margin-top: -2%;
     width: 40px;
     position: absolute;
@@ -502,8 +499,7 @@ span {
     color: #800040;
     margin: 2%;
     font-size: 40px;
-    animation-duration: 3s;
-    animation-name: slidein;
+    margin-left: -55px;
   }
   .yo p {
     color: #800040;
