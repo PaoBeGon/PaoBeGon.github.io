@@ -419,10 +419,7 @@
   .ca-menu {
     float: center;
     margin: 50px auto;
-    padding: 0 0 0 48px;
-    margin: 20px auto;
-    position: fixed;
-    z-index: 1000;
+    padding: 0 0 0 38px;
   }
   .ca-menu li {
     width: 50px;
