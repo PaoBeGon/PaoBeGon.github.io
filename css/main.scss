@@ -530,18 +530,34 @@ to {-webkit-transform: rotate(360deg);}}
 margin:auto 0;
 }
 }
-// @media (max-width:720px){
-// .habilidades img{
-// 	margin-left:10%;
-// }
-// }
-// @media (max-width:720px){
-// .proyect img{
-// 	width:250px;
-// 	margin-left:-5%;
-// 	padding:15px;
-// }
-// }
+@media (max-width:720px){
+.gif img{
+  margin-left:15%;
+  border-radius:100%;
+  margin-top:10%;
+  width: 200px;
+}
+.gif h2{
+  font-family:$fuente;
+  color:$color_guinda;
+  font-size:60px;
+  text-align: center;
+  margin:auto;
+}
+}
+@media (max-width:720px){
+.copyrigth{
+  background-color: $color_guinda;
+  padding: 1% 0;
+  margin-top: 10%;
+}
+.copyrigth p{
+  font-family: $fuente;
+  color: $color_cremac;
+  font-size: 15px;
+  text-align: center;
+}
+}
 // @media (max-width:720px){
 // .gif img{
 // 	width:150px;
