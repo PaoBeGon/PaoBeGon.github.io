@@ -44,8 +44,6 @@
   width: 115px;
   height: 115px;
   border: 5px solid #800040;
-  overflow: hidden;
-  position: relative;
   display: inline-block;
   list-style: none;
   background: #FFF0C9;
@@ -67,29 +65,37 @@
   margin-right: 0px;
 }
 
-.ca-menu li a {
+.ca-menu a {
   text-align: left;
   width: 100%;
   height: 100%;
   display: block;
   color: #800040;
   position: relative;
+  font-size: 25px;
+  font-family: "Lobster Two", cursive;
+  color: #800040;
+  padding: 5%;
+  transition: all 0.5s;
 }
 
 .ca-menu a:hover, .ca-menu a.active {
-  color: #800040;
+  font-size: 25px;
+  font-family: "Lobster Two", cursive;
+  color: #FCD47D;
+  text-decoration: none;
 }
 
 .ca-icon {
   font-family: 'WebSymbolsRegular', cursive;
-  font-size: 10px;
+  font-size: 90px;
   color: #800040;
   line-height: 60px;
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0px;
-  top: 20px;
+  top: 25px;
   text-align: center;
   -webkit-transition: all 400ms linear;
   -moz-transition: all 400ms linear;
@@ -99,7 +105,8 @@
 }
 
 .ca-main {
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: bold;
   position: absolute;
   top: 55px;
   height: 80px;
@@ -111,12 +118,7 @@
   color: #800040;
 }
 
-.ca-sub {
-  display: none;
-}
-
 .ca-menu li:hover {
-  z-index: 999;
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -129,7 +131,6 @@
 .ca-menu li:hover .ca-icon {
   color: #FFF0C9;
   font-size: 20px;
-  text-shadow: 0px 0px 1px #000;
   -webkit-animation: moveFromBottom 100ms ease;
   -moz-animation: moveFromBottom 100ms ease;
   -ms-animation: moveFromBottom 100ms ease;
@@ -140,54 +141,6 @@
   -webkit-animation: moveFromBottom 500ms ease;
   -moz-animation: moveFromBottom 500ms ease;
   -ms-animation: moveFromBottom 500ms ease;
-}
-
-@-webkit-keyframes moveFromBottom {
-  from {
-    -webkit-transform: translateY(200%) scale(0.5);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0%) scale(1);
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes moveFromBottom {
-  from {
-    -moz-transform: translateY(200%) scale(0.5);
-    opacity: 0;
-  }
-  to {
-    -moz-transform: translateY(0%) scale(1);
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes moveFromBottom {
-  from {
-    -ms-transform: translateY(200%) scale(0.5);
-    opacity: 0;
-  }
-  to {
-    -ms-transform: translateY(0%) scale(1);
-    opacity: 1;
-  }
-}
-
-.nav a {
-  font-size: 25px;
-  font-family: "Lobster Two", cursive;
-  color: #800040;
-  padding: 5%;
-  transition: all 0.5s;
-}
-
-.nav a:hover, .nav a.active {
-  font-size: 25px;
-  font-family: "Lobster Two", cursive;
-  color: #FCD47D;
-  text-decoration: none;
 }
 
 .presentacion {
@@ -356,14 +309,12 @@
   width: 100px;
   margin-top: 18%;
   margin-left: 30%;
-  padding: 2%;
+  padding: 5%;
 }
 
 .foot img:hover {
-  width: 100px;
-  border: 3px dashed #800040;
-  border-radius: 100%;
-  padding: 2%;
+  width: 120px;
+  padding: 5%;
   -webkit-animation: 3s rotate linear infinite;
   animation: 3s rotate linear infinite;
   -webkit-transform-origin: 50% 50%;
