@@ -367,9 +367,16 @@
 }
 
 @media (max-width: 720px) {
+  .fondog {
+    background: url("../img/fond.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.9;
+  }
   .ca-menu {
     margin: 50px auto;
     text-align: center;
+    position: center;
   }
   .ca-menu li {
     width: 45px;
