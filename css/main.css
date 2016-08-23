@@ -366,42 +366,47 @@
   font-size: 18px;
 }
 
-@media (min-width: 480px) {
-  .fondog {
-    background: url("../img/fond-408w.jpg");
+@media (max-width: 720px) {
+  .ca-menu {
+    margin: 50px auto;
+    text-align: center;
   }
-}
-
-.ca-menu {
-  margin: 35px auto;
-}
-
-.ca-menu li {
-  width: 45px;
-  height: 45px;
-  border: 2px solid #800040;
-  background: #FFF0C9;
-  text-align: center;
-}
-
-.ca-icon {
-  font-family: 'WebSymbolsRegular', cursive;
-  font-size: 2px;
-  text-align: center;
-  color: #800040;
-  width: 100%;
-  top: 10px;
-  text-align: center;
-  -webkit-transition: all 400ms linear;
-  -moz-transition: all 400ms linear;
-  -o-transition: all 400ms linear;
-  -ms-transition: all 400ms linear;
-  transition: all 400ms linear;
-}
-
-.ca-main {
-  overflow: hidden;
-  font-size: 0;
+  .ca-menu li {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #800040;
+    background: #FFF0C9;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 125px;
+    -moz-border-radius: 125px;
+    border-radius: 125px;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+  }
+  .ca-icon {
+    font-family: 'WebSymbolsRegular', cursive;
+    font-size: 2px;
+    text-align: center;
+    color: #800040;
+    width: 100%;
+    top: 10px;
+    text-align: center;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+  }
+  .ca-main {
+    overflow: hidden;
+    font-size: 0;
+  }
 }
 
 @media (max-width: 720px) {
