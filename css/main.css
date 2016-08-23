@@ -22,7 +22,6 @@
   from {
     transform: scale(0.9);
   }
-  transform: scale(1.1);
 }
 
 .nav {
@@ -406,6 +405,7 @@
   }
   .ca-main {
     overflow: hidden;
+    font-size: 0;
   }
 }
 
