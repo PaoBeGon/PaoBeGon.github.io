@@ -312,7 +312,7 @@
 }
 
 .foot img:hover {
-  width: 120px;
+  width: 100px;
   padding: 5%;
   -webkit-animation: 3s rotate linear infinite;
   animation: 3s rotate linear infinite;
@@ -364,6 +364,26 @@
   font-family: "Lobster Two", cursive;
   color: #FFF0C9;
   font-size: 18px;
+}
+
+.cv i {
+  font-size: 50px;
+  margin-top: 1%;
+  color: #800040;
+}
+
+.cv a {
+  font-size: 18px;
+  font-family: "Pontano Sans", sans-serif;
+  margin-bottom: 4%;
+  color: #800040;
+  font-weight: bold;
+}
+
+.cv a:hover {
+  text-decoration: none;
+  color: #800040;
+  font-weight: bold;
 }
 
 @media (max-width: 720px) {

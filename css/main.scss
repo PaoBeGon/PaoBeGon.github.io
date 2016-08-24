@@ -343,7 +343,7 @@ $color_cremac:#FFF0C9;
   padding: 5%;
 }
 .foot img:hover{
-	width: 120px;
+	width: 100px;
 	padding:5%;
   -webkit-animation: 3s rotate linear infinite;
   animation: 3s rotate linear infinite;
@@ -377,6 +377,23 @@ to {-webkit-transform: rotate(360deg);}}
   font-family: $fuente;
   color: $color_cremac;
   font-size: 18px;
+}
+.cv i{
+  font-size: 50px;
+  margin-top:1% ;
+  color:$color_guinda;
+}
+.cv a{
+  font-size: 18px;
+  font-family: $fuentep;
+  margin-bottom:4%;
+  color:$color_guinda;
+  font-weight: bold;
+}
+.cv a:hover{
+text-decoration:none;
+color:$color_guinda;
+  font-weight: bold;
 }
 // media-responsive
 @media (max-width:720px){
