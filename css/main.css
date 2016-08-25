@@ -363,7 +363,8 @@
 .copyrigth p {
   font-family: "Pontano Sans", sans-serif;
   color: #FFF0C9;
-  font-size: 18px;
+  font-size: 13px;
+  margin-bottom: -2px;
 }
 
 .cv i {
